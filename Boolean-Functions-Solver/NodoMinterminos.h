@@ -1,5 +1,5 @@
-#ifndef NODOMINTERMINO_H
-#define NODOMINTERMINO_H
+#ifndef NODOMINTERMINOS_H
+#define NODOMINTERMINOS_H
 #include "Mintermino.h"
 
 class NodoMinterminos {
@@ -14,4 +14,4 @@ class NodoMinterminos {
         void setMintermino(Mintermino *m) { mintermino = m; };
 };
 
-#endif // NODOMINTERMINO_H
+#endif // NODOMINTERMINOS_H

@@ -19,7 +19,7 @@ HEADERS += \
     ListaMinterminos.h \
     ListaVariables.h \
     Mintermino.h \
-    NodoMintermino.h \
+    NodoMinterminos.h \
     NodoVariables.h \
     mainwindow.h
 
