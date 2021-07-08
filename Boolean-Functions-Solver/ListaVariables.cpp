@@ -25,3 +25,13 @@ bool ListaVariables :: getValorVerdad(string v) {
     }
     return valor;
 }
+
+int ListaVariables :: longitud() {
+    int cont = 0;
+    NodoVariables *temp = cabeza;
+    while(temp != nullptr) {
+        cont++;
+        temp = temp -> getSiguiente();
+    }
+    return cont;
+}
