@@ -35,3 +35,14 @@ int ListaVariables :: longitud() {
     }
     return cont;
 }
+
+bool ListaVariables :: encontrar(string s) {
+    bool encontrado = false;
+    NodoVariables *temp = cabeza;
+    while(encontrado == false && temp != nullptr) {
+        if(temp -> getVariable().find(s) != string :: npos)
+            encontrado = true;
+        temp = temp -> getSiguiente();
+    }
+    return encontrado;
+}
