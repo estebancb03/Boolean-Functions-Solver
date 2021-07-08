@@ -66,3 +66,29 @@ void Mintermino :: estandarizar() {
         formulaMintermino += variables -> getVariable(variableRecorrido);
     }
 }
+
+void Mintermino :: evaluar() {
+    int cont = 0;
+    llenarListaVariables();
+    estandarizar();
+    bool determinados[4] = { variables -> getValorVerdad("a"), variables -> getValorVerdad("b"), variables -> getValorVerdad("c"), variables -> getValorVerdad("d") };
+    cout << "Formula revisada = " << formulaMintermino << endl;
+    cout << "Valores NO revisados = " << determinados[0] << determinados[1] << determinados[2] << determinados[3] << endl;
+    for(int i = 0; i < formulaMintermino.length(); i++) {
+        if(!isalpha(formulaMintermino[i])) {
+            cont++;
+            if(determinados[i - cont] == true)
+                determinados[i - cont] = false;
+            else
+                determinados[i - cont] = true;
+        }
+    }
+    cout << "Valores revisados = " << determinados[0] << determinados[1] << determinados[2] << determinados[3] << endl;
+    int j = 0;
+    while(j < variables -> longitud()) {
+        if(determinados[j] == false)
+            setValorVerdad(false);
+        j++;
+    }
+    cout << "Valor Mintermino = " << getValorVerdad() << endl << endl;
+}
