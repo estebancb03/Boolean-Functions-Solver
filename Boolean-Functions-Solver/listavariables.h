@@ -10,8 +10,9 @@ class ListaVariables {
         void agregarVariable(string v, bool vv);
         bool getValorVerdad(string v);
         string getVariable(string v);
+        void imprimirLista();
         bool encontrar(string v);
         int longitud();
 };
 
-#endif // LISTAVARIABLES_H
+#endif 

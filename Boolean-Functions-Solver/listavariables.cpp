@@ -47,6 +47,19 @@ bool ListaVariables :: encontrar(string s) {
     return encontrado;
 }
 
+void ListaVariables :: imprimirLista() {
+    NodoVariables *temp = cabeza;
+    if(temp == nullptr)
+        cout << "Lista vacia";
+    else {
+        while(temp != nullptr) {
+            cout << temp -> getValorVerdad() << "->";
+            temp = temp -> getSiguiente();
+        }
+        cout << "NULL";
+    }
+}
+
 string ListaVariables :: getVariable(string v) {
     string variable;
     NodoVariables *temp = cabeza;
