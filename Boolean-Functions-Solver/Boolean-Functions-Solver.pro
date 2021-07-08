@@ -10,11 +10,13 @@ CONFIG += c++11
 
 SOURCES += \
     ListaVariables.cpp \
+    Mintermino.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     ListaVariables.h \
+    Mintermino.h \
     NodoVariables.h \
     mainwindow.h
 
