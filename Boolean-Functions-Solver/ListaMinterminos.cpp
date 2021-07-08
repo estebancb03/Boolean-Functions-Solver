@@ -13,3 +13,13 @@ void ListaMinterminos :: agregarMintermino(Mintermino *m) {
         temp -> setSiguiente(nuevo);
     }
 }
+
+int ListaMinterminos :: longitud() {
+    int cont = 0;
+    NodoMinterminos *temp = cabeza;
+    while(temp != nullptr) {
+        cont++;
+        temp = temp -> getSiguiente();
+    }
+        return cont;
+}
