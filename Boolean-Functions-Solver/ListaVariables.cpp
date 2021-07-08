@@ -46,3 +46,14 @@ bool ListaVariables :: encontrar(string s) {
     }
     return encontrado;
 }
+
+string ListaVariables :: getVariable(string v) {
+    string variable;
+    NodoVariables *temp = cabeza;
+    while(temp != nullptr) {
+        if(temp -> getVariable().find(v) != string :: npos)
+            variable = temp -> getVariable();
+        temp = temp -> getSiguiente();
+    }
+    return variable;
+}
