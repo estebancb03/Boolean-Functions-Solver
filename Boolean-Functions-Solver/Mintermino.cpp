@@ -33,3 +33,15 @@ void Mintermino :: llenarListaVariables() {
         }
     }
 }
+
+string Mintermino :: averiguaFaltantes() {
+    string variablesPosibles = "abcd";
+    string variableCiclo;
+    string faltantes;
+    for(int i = 0; i < variablesPosibles.length(); i++) {
+        variableCiclo = variablesPosibles[i];
+        if(variables -> encontrar(variableCiclo) == false)
+            faltantes += variableCiclo;
+    }
+    return faltantes;
+}
