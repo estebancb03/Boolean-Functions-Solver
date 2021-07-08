@@ -14,3 +14,14 @@ void ListaVariables :: agregarVariable(string v, bool vv) {
         temp -> setSiguiente(nuevo);
     }
 }
+
+bool ListaVariables :: getValorVerdad(string v) {
+    bool valor;
+    NodoVariables *temp = cabeza;
+    while(temp != nullptr) {
+        if(temp -> getVariable().find(v) != string :: npos)
+            valor = temp -> getValorVerdad();
+        temp = temp -> getSiguiente();
+    }
+    return valor;
+}
