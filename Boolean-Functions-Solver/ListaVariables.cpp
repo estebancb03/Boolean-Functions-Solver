@@ -15,17 +15,6 @@ void ListaVariables :: agregarVariable(Variable *v) {
     }
 }
 
-bool ListaVariables :: getValorVerdad(string v) {
-    bool valor;
-    NodoVariables *temp = cabeza;
-    while(temp != nullptr) {
-        if(temp -> getVariable().find(v) != string :: npos)
-            valor = temp -> getValorVerdad();
-        temp = temp -> getSiguiente();
-    }
-    return valor;
-}
-
 int ListaVariables :: longitud() {
     int cont = 0;
     NodoVariables *temp = cabeza;
