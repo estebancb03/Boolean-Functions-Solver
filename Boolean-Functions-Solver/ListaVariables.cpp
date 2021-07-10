@@ -35,3 +35,11 @@ bool ListaVariables :: encontrar(string s) {
         }
     return encontrado;
 }
+
+NodoVariables* ListaVariables :: getVariableNodo(string s) {
+    NodoVariables *temp = cabeza;
+    while(temp -> getSiguiente() != nullptr && temp -> getVariable() -> getLetra().find(s) == string :: npos) {
+        temp = temp -> getSiguiente();
+    }
+    return temp;
+}
