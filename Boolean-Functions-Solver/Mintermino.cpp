@@ -5,29 +5,29 @@
 using namespace std;
 
 void Mintermino :: llenarListaVariables() {
-    string variable;
+    string letra;
     for(int i = 0; i < formulaMintermino.length(); i++) {
         if(i < formulaMintermino.length() - 1 && !isalpha(formulaMintermino[i + 1])) {
-            variable = "";
-            variable += formulaMintermino[i];
-            variable += formulaMintermino[i + 1];
+            letra = "";
+            letra += formulaMintermino[i];
+            letra += formulaMintermino[i + 1];
             i++;
         }
         else
-            variable = formulaMintermino[i];
-        if(variable.find("a") != string :: npos) {
-            variables -> agregarVariable(variable, introducidoA);
+            letra = formulaMintermino[i];
+        if(letra.find("a") != string :: npos) {
+            variables -> agregarVariable(new Variable(letra, introducidoA));
         }
         else {
-            if(variable.find("b") != string :: npos) {
-                variables -> agregarVariable(variable, introducidoB);
+            if(letra.find("b") != string :: npos) {
+                variables -> agregarVariable(new Variable(letra, introducidoB));
             }
             else {
-                if(variable.find("c") != string :: npos) {
-                    variables -> agregarVariable(variable, introducidoC);
+                if(letra.find("c") != string :: npos) {
+                    variables -> agregarVariable(new Variable(letra, introducidoC));
                 }
-                else if(variable.find("d") != string :: npos) {
-                    variables -> agregarVariable(variable, introducidoD);
+                else if(letra.find("d") != string :: npos) {
+                    variables -> agregarVariable(new Variable(letra, introducidoD));
                 }
             }
         }
