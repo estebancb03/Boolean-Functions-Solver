@@ -67,24 +67,22 @@ void Mintermino :: estandarizar() {
     }
 }
 
-void Mintermino :: evaluar() {
+bool Mintermino :: evaluar() {
     int cont = 0;
+    string variablesPosibles = "abcd";
+    string letra;
+    bool determinados[variablesPosibles.length()];
     llenarListaVariables();
     estandarizar();
-    bool determinados[4] = { variables -> getValorVerdad("a"), variables -> getValorVerdad("b"), variables -> getValorVerdad("c"), variables -> getValorVerdad("d") };
-    for(int i = 0; i < formulaMintermino.length(); i++) {
-        if(!isalpha(formulaMintermino[i])) {
-            cont++;
-            if(determinados[i - cont] == true)
-                determinados[i - cont] = false;
-            else
-                determinados[i - cont] = true;
-        }
+    for(int i = 0; i < variablesPosibles.length(); i++) {
+        letra = variablesPosibles[i];
+        determinados[i] = variables -> getVariableNodo(letra) -> getVariable() -> evaluar();
     }
     int j = 0;
     while(j < variables -> longitud()) {
         if(determinados[j] == false)
-            setValorVerdad(false);
+            setValorVerdad(false);;
         j++;
     }
+    return getValorVerdad();
 }
