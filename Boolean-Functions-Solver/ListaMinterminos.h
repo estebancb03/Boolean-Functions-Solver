@@ -8,6 +8,7 @@ class ListaMinterminos {
         ListaMinterminos() { cabeza = nullptr; };
         ~ListaMinterminos() { delete cabeza; };
         void agregarMintermino(Mintermino *m);
+        NodoMinterminos *getMinterminoNodo(string s);
         int longitud();
 };
 
