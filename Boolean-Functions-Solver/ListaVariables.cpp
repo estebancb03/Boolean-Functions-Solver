@@ -3,9 +3,9 @@
 #include <string.h>
 using namespace std;
 
-void ListaVariables :: agregarVariable(string v, bool vv) {
+void ListaVariables :: agregarVariable(Variable *v) {
     NodoVariables *temp = cabeza;
-    NodoVariables *nuevo = new NodoVariables(v, vv);
+    NodoVariables *nuevo = new NodoVariables(v);
     if(temp == nullptr)
         cabeza = nuevo;
     else {
