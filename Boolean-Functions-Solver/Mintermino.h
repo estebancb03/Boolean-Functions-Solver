@@ -12,7 +12,7 @@ class Mintermino {
     public:
         Mintermino(string fmin, bool a, bool b, bool c, bool d) { variables = new ListaVariables(); formulaMintermino = fmin; introducidoA = a; introducidoB = b; introducidoC = c; introducidoD = d; valorVerdad = true; };
         ~Mintermino() { delete variables; };
-        void evaluar();
+        bool evaluar();
         void estandarizar();
         void llenarListaVariables();
         string averiguaFaltantes();
