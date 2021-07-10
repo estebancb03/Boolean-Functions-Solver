@@ -7,9 +7,8 @@ class ListaVariables {
     public:
         ListaVariables() { cabeza = nullptr; };
         ~ListaVariables() { delete cabeza; };
-        void agregarVariable(string v, bool vv);
-        bool getValorVerdad(string v);
-        string getVariable(string v);
+        void agregarVariable(Variable *v);
+        NodoVariables *getVariableNodo(string s);
         bool encontrar(string v);
         int longitud();
 };
