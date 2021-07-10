@@ -29,10 +29,10 @@ bool ListaVariables :: encontrar(string s) {
     bool encontrado = false;
     NodoVariables *temp = cabeza;
     while(encontrado == false && temp != nullptr) {
-        if(temp -> getVariable().find(s) != string :: npos)
+        if(temp -> getVariable() -> getLetra().find(s) != string :: npos)
             encontrado = true;
-        temp = temp -> getSiguiente();
-    }
+            temp = temp -> getSiguiente();
+        }
     return encontrado;
 }
 
