@@ -48,22 +48,22 @@ string Mintermino :: averiguaFaltantes() {
 
 void Mintermino :: estandarizar() {
     string variablesPosibles = "abcd";
-    string variableRecorrido;
+    string letraRecorrido;
     string faltantes;
-    string variable;
+    string letra;
     int preLongitud = variables -> longitud();
     cout << "Formula NO revisada = " << formulaMintermino << endl;
     if(preLongitud != 4) {
         faltantes = averiguaFaltantes();
         for(int i = 0; i < faltantes.length(); i++) {
-            variable =  faltantes[i];
-            variables -> agregarVariable(variable, true);
+            letra =  faltantes[i];
+            variables -> agregarVariable(new Variable(letra, true));
         }
     }
     formulaMintermino = "";
     for(int i = 0; i < variablesPosibles.length(); i++){
-        variableRecorrido = variablesPosibles[i];
-        formulaMintermino += variables -> getVariable(variableRecorrido);
+        letraRecorrido = variablesPosibles[i];
+        formulaMintermino += variables -> getVariableNodo(letraRecorrido) -> getVariable() -> getLetra();
     }
 }
 
