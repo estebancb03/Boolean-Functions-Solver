@@ -12,6 +12,7 @@ SOURCES += \
     ListaMinterminos.cpp \
     ListaVariables.cpp \
     Mintermino.cpp \
+    Variable.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -21,6 +22,7 @@ HEADERS += \
     Mintermino.h \
     NodoMinterminos.h \
     NodoVariables.h \
+    Variable.h \
     mainwindow.h
 
 FORMS += \
