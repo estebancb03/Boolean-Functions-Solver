@@ -31,6 +31,20 @@ void Lista<T> :: agregarObjeto(T *o) {
 }
 
 template <typename T>
+void Lista<T> :: imprimirLista() {
+    Nodo<T> *temp = cabeza;
+    if(temp == nullptr)
+        cout << "Lista vacia";
+    else {
+        while(temp != nullptr) {
+            cout << temp -> getObjeto() << "->";
+            temp = temp -> getSiguiente();
+        }
+        cout << "NULL";
+    }
+}
+
+template <typename T>
 int Lista<T> :: longitud() {
     int cont = 0;
     Nodo<T> *temp = cabeza;
@@ -38,13 +52,13 @@ int Lista<T> :: longitud() {
         cont++;
         temp = temp -> getSiguiente();
     }
-    return cont;
+        return cont;
 }
 
 template <typename T>
 Nodo<T>* Lista<T> :: getNodo(string s) {
     Nodo<T> *temp = cabeza;
-    while(temp -> getSiguiente() != nullptr && temp -> getObj() -> getFormula().find(s) == string :: npos) {
+    while(temp -> getSiguiente() != nullptr && temp -> getObjeto() -> getFormula().find(s) == string :: npos) {
         temp = temp -> getSiguiente();
     }
     return temp;
@@ -55,11 +69,11 @@ bool Lista<T> :: encontrar(string s) {
     bool encontrado = false;
     Nodo<T> *temp = cabeza;
     while(encontrado == false && temp != nullptr) {
-        if(temp -> getObj() -> getFormula().find(s) != string :: npos)
+        if(temp -> getObjeto() -> getFormula().find(s) != string :: npos)
             encontrado = true;
         temp = temp -> getSiguiente();
     }
     return encontrado;
 }
 
-#endif 
+#endif  // LISTA_H

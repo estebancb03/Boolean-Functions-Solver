@@ -15,4 +15,4 @@ class Variable {
         bool evaluar();
 };
 
-#endif
+#endif // VARIABLE_H

@@ -9,19 +9,17 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    ListaMinterminos.cpp \
-    ListaVariables.cpp \
+    FuncionBooleana.cpp \
     Mintermino.cpp \
     Variable.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
-    ListaMinterminos.h \
-    ListaVariables.h \
+    FuncionBooleana.h \
+    Lista.h \
     Mintermino.h \
-    NodoMinterminos.h \
-    NodoVariables.h \
+    Nodo.h \
     Variable.h \
     mainwindow.h
 

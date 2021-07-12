@@ -22,4 +22,4 @@ class Mintermino {
         bool getValorVerdad() { return valorVerdad; };
 };
 
-#endif
+#endif // MINTERMINO_H

@@ -12,7 +12,7 @@ class FuncionBooleana {
     string formulaFuncion;
     bool valorVerdad;
     bool introducidos[4];
-    public: 
+    public:
         FuncionBooleana(string ff, bool intro[]) { formulaFuncion = ff; listaMinterminos = new Lista<Mintermino>(); memcpy(introducidos,intro, 4 * sizeof(int)); valorVerdad = false; };
         ~FuncionBooleana() { delete listaMinterminos; };
         bool getValorVerdad() { return valorVerdad; };
@@ -24,4 +24,4 @@ class FuncionBooleana {
         void llenarValoresVerdadMinterminos(bool array[]);
 };
 
-#endif
+#endif // FUNCIONBOOLEANA_H
