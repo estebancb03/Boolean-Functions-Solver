@@ -23,11 +23,6 @@ void FuncionBooleana :: evaluar() {
             setValorVerdad(true);
         i++;
     }
-    cout << "[";
-    for(int i = 0; i < longitud; i++) {
-        cout << valoresVerdadMinterminos[i] << ",";
-    }
-    cout << "]" << endl;
 }
 
 void FuncionBooleana :: llenarValoresVerdadMinterminos(bool array[]) {
