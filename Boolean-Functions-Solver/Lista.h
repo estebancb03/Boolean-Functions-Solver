@@ -30,4 +30,15 @@ void Lista<T> :: agregarObjeto(T *o) {
     }
 }
 
+template <typename T>
+int Lista<T> :: longitud() {
+    int cont = 0;
+    Nodo<T> *temp = cabeza;
+    while(temp != nullptr) {
+        cont++;
+        temp = temp -> getSiguiente();
+    }
+        return cont;
+}
+
 #endif 
