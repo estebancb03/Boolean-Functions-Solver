@@ -17,4 +17,17 @@ class Lista {
         int longitud();
 };
 
+template <typename T>
+void Lista<T> :: agregarObjeto(T *o) {
+    Nodo<T> *temp = cabeza;
+    Nodo<T> *nuevo = new Nodo<T>(o);
+    if(temp == nullptr)
+        cabeza = nuevo;
+    else {
+        while(temp -> getSiguiente() != nullptr)
+            temp = temp -> getSiguiente();
+        temp -> setSiguiente(nuevo);
+    }
+}
+
 #endif 
