@@ -38,7 +38,28 @@ int Lista<T> :: longitud() {
         cont++;
         temp = temp -> getSiguiente();
     }
-        return cont;
+    return cont;
+}
+
+template <typename T>
+Nodo<T>* Lista<T> :: getNodo(string s) {
+    Nodo<T> *temp = cabeza;
+    while(temp -> getSiguiente() != nullptr && temp -> getObj() -> getFormula().find(s) == string :: npos) {
+        temp = temp -> getSiguiente();
+    }
+    return temp;
+}
+
+template <typename T>
+bool Lista<T> :: encontrar(string s) {
+    bool encontrado = false;
+    Nodo<T> *temp = cabeza;
+    while(encontrado == false && temp != nullptr) {
+        if(temp -> getObj() -> getFormula().find(s) != string :: npos)
+            encontrado = true;
+        temp = temp -> getSiguiente();
+    }
+    return encontrado;
 }
 
 #endif 
