@@ -4,15 +4,15 @@
 using namespace std;
 
 class Variable {
-    string letra;
+    string formula;
     bool valorVerdad;
     public:
-        Variable(string l, bool vv) { letra = l; valorVerdad = vv; };
-        string getLetra() { return letra; };
+        Variable(string f, bool vv) { formula = f; valorVerdad = vv; };
+        string getFormula() { return formula; };
         bool getValorVerdad() { return valorVerdad; };
-        void setLetra(string l) { letra = l; };
+        void setFormula(string f) { formula = f; };
         void setValorVerdad(bool vv) { valorVerdad = vv; };
         bool evaluar();
 };
 
-#endif // VARIABLE_H
+#endif
