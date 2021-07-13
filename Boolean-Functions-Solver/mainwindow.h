@@ -15,8 +15,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void llenarComboBox(QComboBox comboBox);
-    bool obtenerDatosComboBox(QComboBox comboBox);
+    void llenarComboBox(QComboBox *comboBox);
+    bool obtenerDatosComboBox(QComboBox *comboBox);
 
 private:
     Ui::MainWindow *ui;
