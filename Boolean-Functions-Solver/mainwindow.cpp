@@ -6,6 +6,10 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    llenarComboBox(ui->comboBoxA);
+    llenarComboBox(ui->comboBoxB);
+    llenarComboBox(ui->comboBox_C);
+    llenarComboBox(ui->comboBoxD);
 }
 
 MainWindow::~MainWindow()
@@ -13,13 +17,13 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow :: llenarComboBox(QComboBox comboBox) {
-    comboBox.addItems({"True", "False"});
+void MainWindow :: llenarComboBox(QComboBox *comboBox) {
+    comboBox->addItems({"True", "False"});
 }
 
-bool MainWindow :: obtenerDatosComboBox(QComboBox comboBox) {
+bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
     bool result = true;
-    QString valor = comboBox.currentText();
+    QString valor = comboBox->currentText();
     if(valor == "False")
         !result;
     return result;
