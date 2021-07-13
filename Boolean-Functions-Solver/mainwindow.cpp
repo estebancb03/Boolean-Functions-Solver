@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     llenarComboBox(ui->comboBoxA);
     llenarComboBox(ui->comboBoxB);
-    llenarComboBox(ui->comboBox_C);
+    llenarComboBox(ui->comboBoxC);
     llenarComboBox(ui->comboBoxD);
 }
 
