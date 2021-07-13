@@ -13,3 +13,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow :: llenarComboBox(QComboBox comboBox) {
+    comboBox.addItems({"True", "False"});
+}
