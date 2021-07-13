@@ -16,3 +16,11 @@ MainWindow::~MainWindow()
 void MainWindow :: llenarComboBox(QComboBox comboBox) {
     comboBox.addItems({"True", "False"});
 }
+
+bool MainWindow :: obtenerDatosComboBox(QComboBox comboBox) {
+    bool result = true;
+    QString valor = comboBox.currentText();
+    if(valor == "False")
+        !result;
+    return result;
+}
