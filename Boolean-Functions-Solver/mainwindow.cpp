@@ -1,12 +1,11 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "FuncionBooleana.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+    ui -> setupUi(this);
     llenarComboBox(ui -> comboBoxA);
     llenarComboBox(ui -> comboBoxB);
     llenarComboBox(ui -> comboBoxC);
@@ -46,14 +45,12 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     bool d = obtenerDatosComboBox(ui -> comboBoxD);
     bool array[4] = { a, b, c, d };
     string formula = ui -> textEditFuncion -> toPlainText().toStdString();
-    FuncionBooleana *funcion = new FuncionBooleana(formula,array);
-    funcion -> evaluar();
-    QString resultado = "True";
-    if(!funcion -> getValorVerdad())
-        resultado = "False";
+    QString resultado = "True";//revisar
     ui -> textEditResult -> setText(resultado);
 }
 
+void MainWindow :: push(string formula, bool valoresVerdad[]) {
+    controlador -> push(formula, valoresVerdad);
+}
 
 void MainWindow::on_pushButtonBorrar_clicked() { borrar(); }
-

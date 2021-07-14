@@ -30,7 +30,7 @@ public:
     QTextEdit *textEditFuncion;
     QComboBox *comboBoxB;
     QComboBox *comboBoxA;
-    QComboBox *comboBox_C;
+    QComboBox *comboBoxC;
     QLabel *label_2;
     QLabel *label_3;
     QLabel *label_4;
@@ -63,9 +63,9 @@ public:
         comboBoxA->setObjectName(QString::fromUtf8("comboBoxA"));
         comboBoxA->setEnabled(true);
         comboBoxA->setGeometry(QRect(110, 100, 69, 22));
-        comboBox_C = new QComboBox(centralwidget);
-        comboBox_C->setObjectName(QString::fromUtf8("comboBox_C"));
-        comboBox_C->setGeometry(QRect(330, 100, 69, 22));
+        comboBoxC = new QComboBox(centralwidget);
+        comboBoxC->setObjectName(QString::fromUtf8("comboBoxC"));
+        comboBoxC->setGeometry(QRect(330, 100, 69, 22));
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(90, 100, 47, 21));
@@ -97,7 +97,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 537, 21));
+        menubar->setGeometry(QRect(0, 0, 537, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
