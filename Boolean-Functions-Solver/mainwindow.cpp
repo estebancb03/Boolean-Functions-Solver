@@ -19,7 +19,7 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow :: llenarComboBox(QComboBox *comboBox) {
-    comboBox->addItems({"True", "False"});
+    comboBox -> addItems({"True", "False"});
 }
 
 bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
@@ -28,6 +28,11 @@ bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
     if(valor == "False")
         result = false;
     return result;
+}
+
+void MainWindow :: borrar() {
+    ui -> textEditFuncion -> setText("");
+    ui -> textEditResult -> setText("");
 }
 
 void MainWindow::on_pushButtonEvaluar_clicked() {
@@ -44,4 +49,7 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
         resultado = "False";
     ui -> textEditResult -> setText(resultado);
 }
+
+
+void MainWindow::on_pushButtonBorrar_clicked() { borrar(); }
 
