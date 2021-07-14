@@ -7,10 +7,10 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    llenarComboBox(ui->comboBoxA);
-    llenarComboBox(ui->comboBoxB);
-    llenarComboBox(ui->comboBoxC);
-    llenarComboBox(ui->comboBoxD);
+    llenarComboBox(ui -> comboBoxA);
+    llenarComboBox(ui -> comboBoxB);
+    llenarComboBox(ui -> comboBoxC);
+    llenarComboBox(ui -> comboBoxD);
 }
 
 MainWindow::~MainWindow()
@@ -26,7 +26,7 @@ bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
     bool result = true;
     QString valor = comboBox->currentText();
     if(valor == "False")
-        !result;
+        result = false;
     return result;
 }
 
@@ -39,10 +39,8 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     string formula = ui -> textEditFuncion -> toPlainText().toStdString();
     FuncionBooleana *funcion = new FuncionBooleana(formula,array);
     funcion -> evaluar();
-    QString resultado;
-    if(funcion->getValorVerdad())
-        resultado = "True";
-    else
+    QString resultado = "True";
+    if(!funcion -> getValorVerdad())
         resultado = "False";
     ui -> textEditResult -> setText(resultado);
 }
