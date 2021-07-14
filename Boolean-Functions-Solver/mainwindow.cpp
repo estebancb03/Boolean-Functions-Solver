@@ -24,7 +24,7 @@ void MainWindow :: llenarComboBox(QComboBox *comboBox) {
 
 bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
     bool result = true;
-    QString valor = comboBox->currentText();
+    QString valor = comboBox -> currentText();
     if(valor == "False")
         result = false;
     return result;
@@ -33,6 +33,10 @@ bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
 void MainWindow :: borrar() {
     ui -> textEditFuncion -> setText("");
     ui -> textEditResult -> setText("");
+    ui -> comboBoxA -> setCurrentText("True");
+    ui -> comboBoxB -> setCurrentText("True");
+    ui -> comboBoxC -> setCurrentText("True");
+    ui -> comboBoxD -> setCurrentText("True");
 }
 
 void MainWindow::on_pushButtonEvaluar_clicked() {
