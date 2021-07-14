@@ -18,6 +18,9 @@ public:
     void llenarComboBox(QComboBox *comboBox);
     bool obtenerDatosComboBox(QComboBox *comboBox);
 
+private slots:
+    void on_pushButtonEvaluar_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
