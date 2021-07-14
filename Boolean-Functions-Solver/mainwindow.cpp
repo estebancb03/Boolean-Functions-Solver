@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 <<<<<<< HEAD
-#include "controlador.h"
+#include "Controlador.h"
 =======
 #include "FuncionBooleana.h"
 

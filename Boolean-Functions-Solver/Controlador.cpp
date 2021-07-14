@@ -1,4 +1,4 @@
-#include "controlador.h"
+#include "Controlador.h"
 #include "mainwindow.h"
 #include "FuncionBooleana.h" //Aqui va el otro con el que se conecta y necesita le lleguen los datos
 
