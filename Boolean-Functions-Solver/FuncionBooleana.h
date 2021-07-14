@@ -13,7 +13,7 @@ class FuncionBooleana {
     bool valorVerdad;
     bool introducidos[4];
     public:
-        FuncionBooleana(string ff, bool intro[]) { formulaFuncion = ff; listaMinterminos = new Lista<Mintermino>(); memcpy(introducidos,intro, 4 * sizeof(int)); valorVerdad = false; };
+        FuncionBooleana() { listaMinterminos = new Lista<Mintermino>(); valorVerdad = false; };
         ~FuncionBooleana() { delete listaMinterminos; };
         bool getValorVerdad() { return valorVerdad; };
         string getFormula() { return formulaFuncion; };
@@ -21,6 +21,7 @@ class FuncionBooleana {
         void setValorVerdad(bool v) { valorVerdad = v; };
         void seleccionarMinterminos();
         void evaluar();
+        void push(string ff, bool intro[]) { formulaFuncion = ff; memcpy(introducidos,intro, 4 * sizeof(int)); }
         void llenarValoresVerdadMinterminos(bool array[]);
 };
 
