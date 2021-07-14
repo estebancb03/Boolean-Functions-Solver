@@ -52,7 +52,7 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
 }
 
 void MainWindow :: push(string formula, bool valoresVerdad[]) {
-    controlador -> push():
+    controlador -> push(formula, valoresVerdad);
 }
 
 void MainWindow::on_pushButtonBorrar_clicked() { borrar(); }

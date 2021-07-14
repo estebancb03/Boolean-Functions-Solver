@@ -22,6 +22,7 @@ public:
     void llenarComboBox(QComboBox *comboBox);
     bool obtenerDatosComboBox(QComboBox *comboBox);
     void push(string formula, bool valoresVerdad[]);
+    void setControlador(Controlador *c) { controlador = c; };
 
 private slots:
     void on_pushButtonEvaluar_clicked();
