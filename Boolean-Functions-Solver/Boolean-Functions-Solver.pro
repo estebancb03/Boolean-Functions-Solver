@@ -12,6 +12,7 @@ SOURCES += \
     FuncionBooleana.cpp \
     Mintermino.cpp \
     Variable.cpp \
+    controlador.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -21,6 +22,7 @@ HEADERS += \
     Mintermino.h \
     Nodo.h \
     Variable.h \
+    controlador.h \
     mainwindow.h
 
 FORMS += \

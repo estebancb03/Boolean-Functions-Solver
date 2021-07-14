@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include "controlador.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -23,4 +23,8 @@ bool MainWindow :: obtenerDatosComboBox(QComboBox comboBox) {
     if(valor == "False")
         !result;
     return result;
+}
+
+void MainWindow::enviarDatosPush(){
+    controlador -> push("DATOS");
 }
