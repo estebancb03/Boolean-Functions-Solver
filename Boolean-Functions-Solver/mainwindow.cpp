@@ -36,7 +36,7 @@ bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
 
 <<<<<<< HEAD
 void MainWindow::enviarDatosPush(){
-    controlador -> push("DATOS");
+    Controlador -> push("DATOS");
 }
 =======
 void MainWindow :: borrar() {

@@ -1,13 +1,11 @@
 #ifndef CONTROLADOR_H
 #define CONTROLADOR_H
 
-#include "mainwindow.h"
-#include ""
 
-class controlador
+class Controlador
 {
 public:
-    controlador();
+    Controlador();
 };
 
 #endif // CONTROLADOR_H
