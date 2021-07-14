@@ -1,12 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "Controlador.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    controlador = new Controlador();
     ui -> setupUi(this);
     llenarComboBox(ui -> comboBoxA);
     llenarComboBox(ui -> comboBoxB);

@@ -8,10 +8,8 @@ using namespace std;
 class MainWindow;
 
 class Controlador{
-    string formula;
     FuncionBooleana *funcion;
     MainWindow *ventana;
-    bool valoresVerdad[4];
     public:
         Controlador();
         void push(string ff, bool array[]);
