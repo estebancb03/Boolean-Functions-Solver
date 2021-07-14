@@ -1,16 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-<<<<<<< HEAD
 #include "Controlador.h"
-=======
-#include "FuncionBooleana.h"
 
->>>>>>> bf57ee28b69d2f9658d0f09a6b73f74bc10124e8
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+    controlador = new Controlador();
+    ui -> setupUi(this);
     llenarComboBox(ui -> comboBoxA);
     llenarComboBox(ui -> comboBoxB);
     llenarComboBox(ui -> comboBoxC);
@@ -34,11 +31,6 @@ bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
     return result;
 }
 
-<<<<<<< HEAD
-void MainWindow::enviarDatosPush(){
-    Controlador -> push("DATOS");
-}
-=======
 void MainWindow :: borrar() {
     ui -> textEditFuncion -> setText("");
     ui -> textEditResult -> setText("");
@@ -55,15 +47,12 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     bool d = obtenerDatosComboBox(ui -> comboBoxD);
     bool array[4] = { a, b, c, d };
     string formula = ui -> textEditFuncion -> toPlainText().toStdString();
-    FuncionBooleana *funcion = new FuncionBooleana(formula,array);
-    funcion -> evaluar();
-    QString resultado = "True";
-    if(!funcion -> getValorVerdad())
-        resultado = "False";
+    QString resultado = "True";//revisar
     ui -> textEditResult -> setText(resultado);
 }
 
+void MainWindow :: push(string formula, bool valoresVerdad[]) {
+    controlador -> push():
+}
 
 void MainWindow::on_pushButtonBorrar_clicked() { borrar(); }
-
->>>>>>> bf57ee28b69d2f9658d0f09a6b73f74bc10124e8
