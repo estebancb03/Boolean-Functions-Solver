@@ -25,12 +25,13 @@ public:
     void setControlador(Controlador *c) { controlador = c; };
 
 private slots:
-    void on_pushButtonEvaluar_clicked();
-
     void on_pushButtonBorrar_clicked();
+
+    void on_pushButtonEvaluar_clicked();
 
 private:
     Controlador *controlador;
     Ui::MainWindow *ui;
 };
+
 #endif // MAINWINDOW_H

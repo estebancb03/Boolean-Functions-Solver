@@ -13,7 +13,6 @@ class Lista {
         void agregarObjeto(T *o);
         Nodo<T> *getNodo(string s);
         bool encontrar(string s);
-        void imprimirLista();
         int longitud();
 };
 
@@ -27,20 +26,6 @@ void Lista<T> :: agregarObjeto(T *o) {
         while(temp -> getSiguiente() != nullptr)
             temp = temp -> getSiguiente();
         temp -> setSiguiente(nuevo);
-    }
-}
-
-template <typename T>
-void Lista<T> :: imprimirLista() {
-    Nodo<T> *temp = cabeza;
-    if(temp == nullptr)
-        cout << "Lista vacia";
-    else {
-        while(temp != nullptr) {
-            cout << temp -> getObjeto() << "->";
-            temp = temp -> getSiguiente();
-        }
-        cout << "NULL";
     }
 }
 

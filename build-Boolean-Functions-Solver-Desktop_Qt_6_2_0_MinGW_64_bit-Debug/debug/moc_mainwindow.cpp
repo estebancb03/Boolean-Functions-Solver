@@ -30,13 +30,13 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 10), // "MainWindow"
-QT_MOC_LITERAL(11, 28), // "on_pushButtonEvaluar_clicked"
-QT_MOC_LITERAL(40, 0), // ""
-QT_MOC_LITERAL(41, 27) // "on_pushButtonBorrar_clicked"
+QT_MOC_LITERAL(11, 27), // "on_pushButtonBorrar_clicked"
+QT_MOC_LITERAL(39, 0), // ""
+QT_MOC_LITERAL(40, 28) // "on_pushButtonEvaluar_clicked"
 
     },
-    "MainWindow\0on_pushButtonEvaluar_clicked\0"
-    "\0on_pushButtonBorrar_clicked"
+    "MainWindow\0on_pushButtonBorrar_clicked\0"
+    "\0on_pushButtonEvaluar_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -70,8 +70,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_pushButtonEvaluar_clicked(); break;
-        case 1: _t->on_pushButtonBorrar_clicked(); break;
+        case 0: _t->on_pushButtonBorrar_clicked(); break;
+        case 1: _t->on_pushButtonEvaluar_clicked(); break;
         default: ;
         }
     }

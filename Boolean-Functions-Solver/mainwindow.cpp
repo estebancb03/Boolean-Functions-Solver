@@ -38,6 +38,15 @@ void MainWindow :: borrar() {
     ui -> comboBoxD -> setCurrentText("True");
 }
 
+void MainWindow :: push(string formula, bool valoresVerdad[]) {
+    controlador -> push(formula, valoresVerdad);
+}
+
+void MainWindow::on_pushButtonBorrar_clicked() {
+    borrar();
+}
+
+
 void MainWindow::on_pushButtonEvaluar_clicked() {
     bool a = obtenerDatosComboBox(ui -> comboBoxA);
     bool b = obtenerDatosComboBox(ui -> comboBoxB);
@@ -45,12 +54,12 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     bool d = obtenerDatosComboBox(ui -> comboBoxD);
     bool array[4] = { a, b, c, d };
     string formula = ui -> textEditFuncion -> toPlainText().toStdString();
-    QString resultado = "True";//revisar
-    ui -> textEditResult -> setText(resultado);
+    push(formula,array);
+    QString resultado;
+    if(!controlador -> pull())
+        resultado = "False";
+    else
+        resultado = "True";
+     ui -> textEditResult -> setText(resultado);
 }
 
-void MainWindow :: push(string formula, bool valoresVerdad[]) {
-    controlador -> push(formula, valoresVerdad);
-}
-
-void MainWindow::on_pushButtonBorrar_clicked() { borrar(); }

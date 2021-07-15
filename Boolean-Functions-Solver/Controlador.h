@@ -13,6 +13,7 @@ class Controlador{
     public:
         Controlador();
         void push(string ff, bool array[]);
+        bool pull();
 };
 
 #endif // CONTROLADOR_H
