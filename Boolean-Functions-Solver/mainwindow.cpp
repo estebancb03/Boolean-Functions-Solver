@@ -55,9 +55,11 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     bool array[4] = { a, b, c, d };
     string formula = ui -> textEditFuncion -> toPlainText().toStdString();
     push(formula,array);
-    QString resultado = "True";
+    QString resultado;
     if(!controlador -> pull())
         resultado = "False";
+    else
+        resultado = "True";
      ui -> textEditResult -> setText(resultado);
 }
 
