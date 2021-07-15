@@ -1,11 +1,9 @@
 #include "mainwindow.h"
-
+#include "Controlador.h"
 #include <QApplication>
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    Controlador *controlador = new Controlador();
     return a.exec();
 }
