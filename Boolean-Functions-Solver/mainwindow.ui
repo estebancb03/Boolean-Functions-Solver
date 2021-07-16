@@ -213,7 +213,7 @@ p, li { white-space: pre-wrap; }
      <string>Evaluar</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButton00">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -229,7 +229,7 @@ p, li { white-space: pre-wrap; }
      <string>a'b'c'd'</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="pushButton01">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -245,7 +245,7 @@ p, li { white-space: pre-wrap; }
      <string>a'bc'd'</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="pushButton02">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -261,7 +261,7 @@ p, li { white-space: pre-wrap; }
      <string>abc'd'</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="pushButton03">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -277,7 +277,7 @@ p, li { white-space: pre-wrap; }
      <string>ab'c'd'</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="pushButton32">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -293,7 +293,7 @@ p, li { white-space: pre-wrap; }
      <string>abcd'</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="pushButton31">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -309,7 +309,7 @@ p, li { white-space: pre-wrap; }
      <string>a'bcd'</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="pushButton23">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -325,7 +325,7 @@ p, li { white-space: pre-wrap; }
      <string>ab'cd</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_8">
+   <widget class="QPushButton" name="pushButton33">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -341,7 +341,7 @@ p, li { white-space: pre-wrap; }
      <string>ab'cd'</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_9">
+   <widget class="QPushButton" name="pushButton22">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -357,7 +357,7 @@ p, li { white-space: pre-wrap; }
      <string>abcd</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_10">
+   <widget class="QPushButton" name="pushButton21">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -373,7 +373,7 @@ p, li { white-space: pre-wrap; }
      <string>a'bcd</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_11">
+   <widget class="QPushButton" name="pushButton20">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -389,7 +389,7 @@ p, li { white-space: pre-wrap; }
      <string>a'b'cd</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_12">
+   <widget class="QPushButton" name="pushButton30">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -405,7 +405,7 @@ p, li { white-space: pre-wrap; }
      <string>a'b'cd'</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_13">
+   <widget class="QPushButton" name="pushButton12">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -421,7 +421,7 @@ p, li { white-space: pre-wrap; }
      <string>abc'd</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_14">
+   <widget class="QPushButton" name="pushButton11">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -437,7 +437,7 @@ p, li { white-space: pre-wrap; }
      <string>a'bc'd</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_15">
+   <widget class="QPushButton" name="pushButton10">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -453,7 +453,7 @@ p, li { white-space: pre-wrap; }
      <string>a'b'c'd</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_16">
+   <widget class="QPushButton" name="pushButton13">
     <property name="geometry">
      <rect>
       <x>370</x>
