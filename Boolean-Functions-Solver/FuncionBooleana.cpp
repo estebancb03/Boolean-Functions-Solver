@@ -14,12 +14,13 @@ void FuncionBooleana :: seleccionarMinterminos() {
 
 void FuncionBooleana :: evaluar() {
     int i = 0;
+    setValorVerdad(false);
     seleccionarMinterminos();
     int longitud = getListaMinterminos() -> longitud();
     bool valoresVerdadMinterminos[longitud];
     llenarValoresVerdadMinterminos(valoresVerdadMinterminos);
     while(i < longitud) {
-        if(valoresVerdadMinterminos[i] == true)
+        if(valoresVerdadMinterminos[i])
             setValorVerdad(true);
         i++;
     }
@@ -34,5 +35,6 @@ void FuncionBooleana :: llenarValoresVerdadMinterminos(bool array[]) {
         listaMinterminos -> getNodo(formula) -> getObjeto() -> setValorVerdad(m -> evaluar());
         array[i] = listaMinterminos -> getNodo(formula) -> getObjeto() -> getValorVerdad();
         i++;
+        listaMinterminos -> eliminarObjeto(0);
     }
 }
