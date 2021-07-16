@@ -35,6 +35,34 @@ private slots:
 
     void on_pushButton01_clicked();
 
+    void on_pushButton02_clicked();
+
+    void on_pushButton03_clicked();
+
+    void on_pushButton10_clicked();
+
+    void on_pushButton11_clicked();
+
+    void on_pushButton12_clicked();
+
+    void on_pushButton13_clicked();
+
+    void on_pushButton20_clicked();
+
+    void on_pushButton21_clicked();
+
+    void on_pushButton22_clicked();
+
+    void on_pushButton23_clicked();
+
+    void on_pushButton30_clicked();
+
+    void on_pushButton31_clicked();
+
+    void on_pushButton32_clicked();
+
+    void on_pushButton33_clicked();
+
 private:
     Controlador *controlador;
     Ui::MainWindow *ui;
