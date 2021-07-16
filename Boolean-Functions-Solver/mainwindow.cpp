@@ -42,6 +42,12 @@ void MainWindow :: push(string formula, bool valoresVerdad[]) {
     controlador -> push(formula, valoresVerdad);
 }
 
+void MainWindow :: agregarMinterminoMatriz(QTextEdit *textEdit, QString mintermino) {
+    QString resultado = textEdit -> toPlainText();
+    resultado += mintermino;
+    textEdit -> setText("+a'b'c'd'");
+}
+
 void MainWindow::on_pushButtonBorrar_clicked() {
     borrar();
 }
@@ -61,5 +67,17 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     else
         resultado = "True";
      ui -> textEditResult -> setText(resultado);
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+    agregarMinterminoMatriz(ui -> textEditFuncion, "+a'b'c'd'");
+}
+
+
+void MainWindow::on_pushButton01_clicked()
+{
+    agregarMinterminoMatriz(ui -> textEditFuncion, "+a'b'c'd'");
 }
 
