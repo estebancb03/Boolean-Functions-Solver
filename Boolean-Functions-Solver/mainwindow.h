@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QComboBox>
+#include <QTextEdit>
 #include "Controlador.h"
 using namespace std;
 
@@ -21,6 +22,7 @@ public:
     void borrar();
     void llenarComboBox(QComboBox *comboBox);
     bool obtenerDatosComboBox(QComboBox *comboBox);
+    void agregarMinterminoMatriz(QTextEdit *textEdit);
     void push(string formula, bool valoresVerdad[]);
     void setControlador(Controlador *c) { controlador = c; };
 
@@ -28,6 +30,8 @@ private slots:
     void on_pushButtonBorrar_clicked();
 
     void on_pushButtonEvaluar_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Controlador *controlador;
