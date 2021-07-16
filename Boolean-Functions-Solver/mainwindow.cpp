@@ -29,6 +29,14 @@ bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
     return result;
 }
 
+void MainWindow :: agregarMinterminoMatriz(QTextEdit *textEdit, QString mintermino) {
+    QString resultado = textEdit -> toPlainText();
+    if(resultado != "")
+        resultado += "+";
+    resultado += mintermino;
+    textEdit -> setText(resultado);
+}
+
 void MainWindow :: borrar() {
     ui -> textEditFuncion -> setText("");
     ui -> textEditResult -> setText("");
@@ -61,5 +69,15 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     else
         resultado = "True";
      ui -> textEditResult -> setText(resultado);
+}
+
+
+void MainWindow::on_pushButton00_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "a'b'c'd'");
+}
+
+
+void MainWindow::on_pushButton01_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "a'bc'd'");
 }
 
