@@ -9,13 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-<<<<<<< HEAD
     <width>475</width>
     <height>489</height>
-=======
-    <width>520</width>
-    <height>625</height>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
    </rect>
   </property>
   <property name="windowTitle">
@@ -40,11 +35,7 @@
      <rect>
       <x>100</x>
       <y>30</y>
-<<<<<<< HEAD
       <width>341</width>
-=======
-      <width>381</width>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <height>31</height>
      </rect>
     </property>
@@ -65,11 +56,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>40</x>
-<<<<<<< HEAD
       <y>280</y>
-=======
-      <y>340</y>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <width>55</width>
       <height>21</height>
      </rect>
@@ -82,11 +69,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>60</x>
-<<<<<<< HEAD
       <y>280</y>
-=======
-      <y>340</y>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <width>91</width>
       <height>21</height>
      </rect>
@@ -99,11 +82,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>40</x>
-<<<<<<< HEAD
       <y>320</y>
-=======
-      <y>380</y>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <width>55</width>
       <height>21</height>
      </rect>
@@ -116,11 +95,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>60</x>
-<<<<<<< HEAD
       <y>320</y>
-=======
-      <y>380</y>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <width>91</width>
       <height>21</height>
      </rect>
@@ -133,11 +108,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>40</x>
-<<<<<<< HEAD
       <y>360</y>
-=======
-      <y>420</y>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <width>55</width>
       <height>21</height>
      </rect>
@@ -150,11 +121,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>60</x>
-<<<<<<< HEAD
       <y>360</y>
-=======
-      <y>420</y>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <width>91</width>
       <height>21</height>
      </rect>
@@ -167,11 +134,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>40</x>
-<<<<<<< HEAD
       <y>400</y>
-=======
-      <y>460</y>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <width>55</width>
       <height>21</height>
      </rect>
@@ -184,11 +147,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>60</x>
-<<<<<<< HEAD
       <y>400</y>
-=======
-      <y>460</y>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <width>91</width>
       <height>21</height>
      </rect>
@@ -204,13 +163,8 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>40</x>
-<<<<<<< HEAD
       <y>440</y>
       <width>401</width>
-=======
-      <y>520</y>
-      <width>441</width>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <height>31</height>
      </rect>
     </property>
@@ -231,13 +185,8 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>170</x>
-<<<<<<< HEAD
       <y>280</y>
       <width>271</width>
-=======
-      <y>340</y>
-      <width>311</width>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <height>61</height>
      </rect>
     </property>
@@ -252,13 +201,8 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>170</x>
-<<<<<<< HEAD
       <y>360</y>
       <width>271</width>
-=======
-      <y>420</y>
-      <width>311</width>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
       <height>61</height>
      </rect>
     </property>
@@ -269,7 +213,6 @@ p, li { white-space: pre-wrap; }
      <string>Evaluar</string>
     </property>
    </widget>
-<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton00">
     <property name="geometry">
      <rect>
@@ -279,25 +222,10 @@ p, li { white-space: pre-wrap; }
       <height>41</height>
      </rect>
     </property>
-=======
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>100</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
     <property name="text">
      <string>a'b'c'd'</string>
     </property>
    </widget>
-<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton10">
     <property name="geometry">
      <rect>
@@ -491,246 +419,6 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="text">
      <string>ab'cd'</string>
-=======
-   <widget class="QPushButton" name="pushButton01">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>100</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>a'bc'd'</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton02">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>100</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>abc'd'</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton03">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>100</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>ab'c'd'</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton32">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>250</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>abcd'</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton31">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>250</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>a'cbd'</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton23">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>200</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>ab'cd</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton33">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>250</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>ab'cd'</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton22">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>200</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>abcd</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton21">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>200</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>a'bcd</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton20">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>200</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>a'b'cd</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton30">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>250</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>a'b'cd'</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton12">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>150</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>abc'd</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton11">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>150</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>a'bc'd</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton10">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>150</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>a'b'c'd</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton13">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>150</y>
-      <width>111</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>ab'c'd</string>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
     </property>
    </widget>
   </widget>
@@ -739,13 +427,8 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-<<<<<<< HEAD
      <width>475</width>
      <height>20</height>
-=======
-     <width>520</width>
-     <height>25</height>
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
     </rect>
    </property>
   </widget>

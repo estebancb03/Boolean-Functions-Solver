@@ -31,11 +31,6 @@ private slots:
 
     void on_pushButtonEvaluar_clicked();
 
-<<<<<<< HEAD
-=======
-    void on_pushButton_clicked();
-
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
     void on_pushButton00_clicked();
 
     void on_pushButton01_clicked();

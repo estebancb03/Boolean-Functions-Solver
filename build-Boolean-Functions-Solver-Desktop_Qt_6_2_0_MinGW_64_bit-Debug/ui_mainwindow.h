@@ -39,7 +39,6 @@ public:
     QTextEdit *textEditResult;
     QPushButton *pushButtonBorrar;
     QPushButton *pushButtonEvaluar;
-<<<<<<< HEAD
     QPushButton *pushButton00;
     QPushButton *pushButton10;
     QPushButton *pushButton11;
@@ -56,24 +55,6 @@ public:
     QPushButton *pushButton13;
     QPushButton *pushButton23;
     QPushButton *pushButton33;
-=======
-    QPushButton *pushButton;
-    QPushButton *pushButton01;
-    QPushButton *pushButton02;
-    QPushButton *pushButton03;
-    QPushButton *pushButton32;
-    QPushButton *pushButton31;
-    QPushButton *pushButton23;
-    QPushButton *pushButton33;
-    QPushButton *pushButton22;
-    QPushButton *pushButton21;
-    QPushButton *pushButton20;
-    QPushButton *pushButton30;
-    QPushButton *pushButton12;
-    QPushButton *pushButton11;
-    QPushButton *pushButton10;
-    QPushButton *pushButton13;
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -82,11 +63,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setEnabled(true);
-<<<<<<< HEAD
         MainWindow->resize(475, 489);
-=======
-        MainWindow->resize(520, 625);
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         label = new QLabel(centralwidget);
@@ -94,17 +71,12 @@ public:
         label->setGeometry(QRect(40, 35, 55, 21));
         textEditFuncion = new QTextEdit(centralwidget);
         textEditFuncion->setObjectName(QString::fromUtf8("textEditFuncion"));
-<<<<<<< HEAD
         textEditFuncion->setGeometry(QRect(100, 30, 341, 31));
-=======
-        textEditFuncion->setGeometry(QRect(100, 30, 381, 31));
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
         QFont font;
         font.setPointSize(10);
         textEditFuncion->setFont(font);
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-<<<<<<< HEAD
         label_2->setGeometry(QRect(40, 280, 55, 21));
         comboBoxA = new QComboBox(centralwidget);
         comboBoxA->setObjectName(QString::fromUtf8("comboBoxA"));
@@ -130,38 +102,10 @@ public:
         comboBoxD = new QComboBox(centralwidget);
         comboBoxD->setObjectName(QString::fromUtf8("comboBoxD"));
         comboBoxD->setGeometry(QRect(60, 400, 91, 21));
-=======
-        label_2->setGeometry(QRect(40, 340, 55, 21));
-        comboBoxA = new QComboBox(centralwidget);
-        comboBoxA->setObjectName(QString::fromUtf8("comboBoxA"));
-        comboBoxA->setGeometry(QRect(60, 340, 91, 21));
-        comboBoxA->setCursor(QCursor(Qt::PointingHandCursor));
-        label_3 = new QLabel(centralwidget);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(40, 380, 55, 21));
-        comboBoxB = new QComboBox(centralwidget);
-        comboBoxB->setObjectName(QString::fromUtf8("comboBoxB"));
-        comboBoxB->setGeometry(QRect(60, 380, 91, 21));
-        comboBoxB->setCursor(QCursor(Qt::PointingHandCursor));
-        label_4 = new QLabel(centralwidget);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(40, 420, 55, 21));
-        comboBoxC = new QComboBox(centralwidget);
-        comboBoxC->setObjectName(QString::fromUtf8("comboBoxC"));
-        comboBoxC->setGeometry(QRect(60, 420, 91, 21));
-        comboBoxC->setCursor(QCursor(Qt::PointingHandCursor));
-        label_5 = new QLabel(centralwidget);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(40, 460, 55, 21));
-        comboBoxD = new QComboBox(centralwidget);
-        comboBoxD->setObjectName(QString::fromUtf8("comboBoxD"));
-        comboBoxD->setGeometry(QRect(60, 460, 91, 21));
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
         comboBoxD->setCursor(QCursor(Qt::PointingHandCursor));
         textEditResult = new QTextEdit(centralwidget);
         textEditResult->setObjectName(QString::fromUtf8("textEditResult"));
         textEditResult->setEnabled(false);
-<<<<<<< HEAD
         textEditResult->setGeometry(QRect(40, 440, 401, 31));
         textEditResult->setFont(font);
         pushButtonBorrar = new QPushButton(centralwidget);
@@ -224,86 +168,6 @@ public:
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
         menubar->setGeometry(QRect(0, 0, 475, 20));
-=======
-        textEditResult->setGeometry(QRect(40, 520, 441, 31));
-        textEditResult->setFont(font);
-        pushButtonBorrar = new QPushButton(centralwidget);
-        pushButtonBorrar->setObjectName(QString::fromUtf8("pushButtonBorrar"));
-        pushButtonBorrar->setGeometry(QRect(170, 340, 311, 61));
-        pushButtonBorrar->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButtonEvaluar = new QPushButton(centralwidget);
-        pushButtonEvaluar->setObjectName(QString::fromUtf8("pushButtonEvaluar"));
-        pushButtonEvaluar->setGeometry(QRect(170, 420, 311, 61));
-        pushButtonEvaluar->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(40, 100, 111, 51));
-        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton01 = new QPushButton(centralwidget);
-        pushButton01->setObjectName(QString::fromUtf8("pushButton01"));
-        pushButton01->setGeometry(QRect(150, 100, 111, 51));
-        pushButton01->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton02 = new QPushButton(centralwidget);
-        pushButton02->setObjectName(QString::fromUtf8("pushButton02"));
-        pushButton02->setGeometry(QRect(260, 100, 111, 51));
-        pushButton02->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton03 = new QPushButton(centralwidget);
-        pushButton03->setObjectName(QString::fromUtf8("pushButton03"));
-        pushButton03->setGeometry(QRect(370, 100, 111, 51));
-        pushButton03->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton32 = new QPushButton(centralwidget);
-        pushButton32->setObjectName(QString::fromUtf8("pushButton32"));
-        pushButton32->setGeometry(QRect(260, 250, 111, 51));
-        pushButton32->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton31 = new QPushButton(centralwidget);
-        pushButton31->setObjectName(QString::fromUtf8("pushButton31"));
-        pushButton31->setGeometry(QRect(150, 250, 111, 51));
-        pushButton31->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton23 = new QPushButton(centralwidget);
-        pushButton23->setObjectName(QString::fromUtf8("pushButton23"));
-        pushButton23->setGeometry(QRect(370, 200, 111, 51));
-        pushButton23->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton33 = new QPushButton(centralwidget);
-        pushButton33->setObjectName(QString::fromUtf8("pushButton33"));
-        pushButton33->setGeometry(QRect(370, 250, 111, 51));
-        pushButton33->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton22 = new QPushButton(centralwidget);
-        pushButton22->setObjectName(QString::fromUtf8("pushButton22"));
-        pushButton22->setGeometry(QRect(260, 200, 111, 51));
-        pushButton22->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton21 = new QPushButton(centralwidget);
-        pushButton21->setObjectName(QString::fromUtf8("pushButton21"));
-        pushButton21->setGeometry(QRect(150, 200, 111, 51));
-        pushButton21->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton20 = new QPushButton(centralwidget);
-        pushButton20->setObjectName(QString::fromUtf8("pushButton20"));
-        pushButton20->setGeometry(QRect(40, 200, 111, 51));
-        pushButton20->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton30 = new QPushButton(centralwidget);
-        pushButton30->setObjectName(QString::fromUtf8("pushButton30"));
-        pushButton30->setGeometry(QRect(40, 250, 111, 51));
-        pushButton30->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton12 = new QPushButton(centralwidget);
-        pushButton12->setObjectName(QString::fromUtf8("pushButton12"));
-        pushButton12->setGeometry(QRect(260, 150, 111, 51));
-        pushButton12->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton11 = new QPushButton(centralwidget);
-        pushButton11->setObjectName(QString::fromUtf8("pushButton11"));
-        pushButton11->setGeometry(QRect(150, 150, 111, 51));
-        pushButton11->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton10 = new QPushButton(centralwidget);
-        pushButton10->setObjectName(QString::fromUtf8("pushButton10"));
-        pushButton10->setGeometry(QRect(40, 150, 111, 51));
-        pushButton10->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton13 = new QPushButton(centralwidget);
-        pushButton13->setObjectName(QString::fromUtf8("pushButton13"));
-        pushButton13->setGeometry(QRect(370, 150, 111, 51));
-        pushButton13->setCursor(QCursor(Qt::PointingHandCursor));
-        MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 520, 25));
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -334,7 +198,6 @@ public:
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7.8pt;\"><br /></p></body></html>", nullptr));
         pushButtonBorrar->setText(QCoreApplication::translate("MainWindow", "Borrar", nullptr));
         pushButtonEvaluar->setText(QCoreApplication::translate("MainWindow", "Evaluar", nullptr));
-<<<<<<< HEAD
         pushButton00->setText(QCoreApplication::translate("MainWindow", "a'b'c'd'", nullptr));
         pushButton10->setText(QCoreApplication::translate("MainWindow", "a'b'c'd", nullptr));
         pushButton11->setText(QCoreApplication::translate("MainWindow", "a'bc'd", nullptr));
@@ -351,24 +214,6 @@ public:
         pushButton13->setText(QCoreApplication::translate("MainWindow", "ab'c'd", nullptr));
         pushButton23->setText(QCoreApplication::translate("MainWindow", "ab'cd", nullptr));
         pushButton33->setText(QCoreApplication::translate("MainWindow", "ab'cd'", nullptr));
-=======
-        pushButton->setText(QCoreApplication::translate("MainWindow", "a'b'c'd'", nullptr));
-        pushButton01->setText(QCoreApplication::translate("MainWindow", "a'bc'd'", nullptr));
-        pushButton02->setText(QCoreApplication::translate("MainWindow", "abc'd'", nullptr));
-        pushButton03->setText(QCoreApplication::translate("MainWindow", "ab'c'd'", nullptr));
-        pushButton32->setText(QCoreApplication::translate("MainWindow", "abcd'", nullptr));
-        pushButton31->setText(QCoreApplication::translate("MainWindow", "a'cbd'", nullptr));
-        pushButton23->setText(QCoreApplication::translate("MainWindow", "ab'cd", nullptr));
-        pushButton33->setText(QCoreApplication::translate("MainWindow", "ab'cd'", nullptr));
-        pushButton22->setText(QCoreApplication::translate("MainWindow", "abcd", nullptr));
-        pushButton21->setText(QCoreApplication::translate("MainWindow", "a'bcd", nullptr));
-        pushButton20->setText(QCoreApplication::translate("MainWindow", "a'b'cd", nullptr));
-        pushButton30->setText(QCoreApplication::translate("MainWindow", "a'b'cd'", nullptr));
-        pushButton12->setText(QCoreApplication::translate("MainWindow", "abc'd", nullptr));
-        pushButton11->setText(QCoreApplication::translate("MainWindow", "a'bc'd", nullptr));
-        pushButton10->setText(QCoreApplication::translate("MainWindow", "a'b'c'd", nullptr));
-        pushButton13->setText(QCoreApplication::translate("MainWindow", "ab'c'd", nullptr));
->>>>>>> 738d9515fcfe1849c16788dffe3982b2d7579fd8
     } // retranslateUi
 
 };
