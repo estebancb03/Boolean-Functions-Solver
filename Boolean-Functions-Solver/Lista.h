@@ -11,6 +11,7 @@ class Lista {
         Lista() { cabeza = nullptr; };
         ~Lista() { delete cabeza; };
         void agregarObjeto(T *o);
+        void eliminarObjeto(int i);
         Nodo<T> *getNodo(string s);
         bool encontrar(string s);
         int longitud();
@@ -59,6 +60,19 @@ bool Lista<T> :: encontrar(string s) {
         temp = temp -> getSiguiente();
     }
     return encontrado;
+}
+
+template <typename T>
+void Lista<T> :: eliminarObjeto(int i) {
+    Nodo<T> *temp= cabeza;
+        int posicion = 0;
+        int encontrado = i;
+        while((cabeza != nullptr) && posicion <= encontrado){
+            cabeza = temp -> getSiguiente();
+            posicion++;
+            if(posicion == encontrado)
+                temp = nullptr;
+        }
 }
 
 #endif  // LISTA_H
