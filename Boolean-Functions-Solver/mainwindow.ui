@@ -226,7 +226,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>a'b'c'd'</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
@@ -242,7 +242,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>a'bc'd'</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
@@ -258,7 +258,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>abc'd'</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
@@ -274,7 +274,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>ab'c'd'</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">
@@ -290,7 +290,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>abcd'</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_6">
@@ -306,7 +306,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>a'bcd'</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_7">
@@ -322,7 +322,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>ab'cd</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_8">
@@ -338,7 +338,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>ab'cd'</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_9">
@@ -354,7 +354,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>abcd</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_10">
@@ -370,7 +370,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>a'bcd</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_11">
@@ -386,7 +386,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>a'b'cd</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_12">
@@ -402,7 +402,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>a'b'cd'</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_13">
@@ -418,7 +418,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>abc'd</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_14">
@@ -434,7 +434,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>a'bc'd</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_15">
@@ -447,10 +447,10 @@ p, li { white-space: pre-wrap; }
      </rect>
     </property>
     <property name="cursor">
-     <cursorShape>ForbiddenCursor</cursorShape>
+     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>a'b'c'd</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_16">
@@ -466,7 +466,7 @@ p, li { white-space: pre-wrap; }
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>ab'c'd</string>
     </property>
    </widget>
   </widget>
