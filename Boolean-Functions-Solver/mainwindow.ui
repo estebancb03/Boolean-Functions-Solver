@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>495</width>
-    <height>305</height>
+    <width>475</width>
+    <height>489</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -35,7 +35,7 @@
      <rect>
       <x>100</x>
       <y>30</y>
-      <width>361</width>
+      <width>341</width>
       <height>31</height>
      </rect>
     </property>
@@ -56,7 +56,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>80</y>
+      <y>280</y>
       <width>55</width>
       <height>21</height>
      </rect>
@@ -69,7 +69,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>80</y>
+      <y>280</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -82,7 +82,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>120</y>
+      <y>320</y>
       <width>55</width>
       <height>21</height>
      </rect>
@@ -95,7 +95,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>120</y>
+      <y>320</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -108,7 +108,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>160</y>
+      <y>360</y>
       <width>55</width>
       <height>21</height>
      </rect>
@@ -121,7 +121,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>160</y>
+      <y>360</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -134,7 +134,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>200</y>
+      <y>400</y>
       <width>55</width>
       <height>21</height>
      </rect>
@@ -147,7 +147,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>200</y>
+      <y>400</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -163,8 +163,8 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>240</y>
-      <width>421</width>
+      <y>440</y>
+      <width>401</width>
       <height>31</height>
      </rect>
     </property>
@@ -188,8 +188,8 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>80</y>
-      <width>291</width>
+      <y>280</y>
+      <width>271</width>
       <height>61</height>
      </rect>
     </property>
@@ -204,8 +204,8 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>160</y>
-      <width>291</width>
+      <y>360</y>
+      <width>271</width>
       <height>61</height>
      </rect>
     </property>
@@ -216,14 +216,270 @@ p, li { white-space: pre-wrap; }
      <string>Evaluar</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton00">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>a'b'c'd'</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton10">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>a'b'c'd</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton11">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>130</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>a'bc'd</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton20">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>170</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>a'b'cd</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton01">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>90</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>a'bc'd'</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton21">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>170</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>a'bcd</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton30">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>210</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>a'b'cd'</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton31">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>210</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>a'bcd'</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton02">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>90</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>abc'd'</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton22">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>170</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>abcd</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton12">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>130</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>abc'd</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton32">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>210</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>abcd'</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton03">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>90</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>ab'c'd'</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton13">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>130</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>ab'c'd</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton23">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>170</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>ab'cd</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton33">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>210</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>ab'cd'</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>495</width>
-     <height>20</height>
+     <width>475</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>

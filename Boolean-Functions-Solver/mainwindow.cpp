@@ -29,6 +29,14 @@ bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
     return result;
 }
 
+void MainWindow :: agregarMinterminoMatriz(QTextEdit *textEdit, QString mintermino) {
+    QString resultado = textEdit -> toPlainText();
+    if(resultado != "")
+        resultado += "+";
+    resultado += mintermino;
+    textEdit -> setText(resultado);
+}
+
 void MainWindow :: borrar() {
     ui -> textEditFuncion -> setText("");
     ui -> textEditResult -> setText("");
@@ -60,5 +68,85 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     else
         resultado = "True";
      ui -> textEditResult -> setText(resultado);
+}
+
+
+void MainWindow::on_pushButton00_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "a'b'c'd'");
+}
+
+
+void MainWindow::on_pushButton01_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "a'bc'd'");
+}
+
+
+void MainWindow::on_pushButton02_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "abc'd'");
+}
+
+
+void MainWindow::on_pushButton03_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "ab'c'd'");
+}
+
+
+void MainWindow::on_pushButton10_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "a'b'c'd");
+}
+
+
+void MainWindow::on_pushButton11_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "a'bc'd");
+}
+
+
+void MainWindow::on_pushButton12_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "abc'd");
+}
+
+
+void MainWindow::on_pushButton13_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "ab'c'd");
+}
+
+
+void MainWindow::on_pushButton20_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "a'b'cd");
+}
+
+
+void MainWindow::on_pushButton21_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "a'bcd");
+}
+
+
+void MainWindow::on_pushButton22_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "abcd");
+}
+
+
+void MainWindow::on_pushButton23_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "ab'cd");
+}
+
+
+void MainWindow::on_pushButton30_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "a'b'cd'");
+}
+
+
+void MainWindow::on_pushButton31_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "a'bcd'");
+}
+
+
+void MainWindow::on_pushButton32_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "abcd'");
+}
+
+
+void MainWindow::on_pushButton33_clicked() {
+    agregarMinterminoMatriz(ui -> textEditFuncion, "ab'cd'");
 }
 
