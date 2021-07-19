@@ -23,6 +23,7 @@ HEADERS += \
     Mintermino.h \
     Nodo.h \
     Variable.h \
+    dllbitacora.h \
     mainwindow.h
 
 FORMS += \
