@@ -89,12 +89,20 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     bool array[4] = { a, b, c, d };
     string formula = ui -> textEditFuncion -> toPlainText().toStdString();
     push(formula,array);
-    QString resultado;
-    if(!controlador -> pull())
+    QString resultado = "True";
+    if(!controlador -> pull()){
         resultado = "False";
-    else
-        resultado = "True";
-     ui -> textEditResult -> setText(resultado);
+    }
+    ui -> textEditResult -> setText(resultado);
+    string arrayFormateo[7] = {
+        obtenerHora(),
+        resultado.toStdString(),
+        ui -> comboBoxA -> currentText().toStdString(),
+        ui -> comboBoxB -> currentText().toStdString(),
+        ui -> comboBoxC -> currentText().toStdString(),
+        ui -> comboBoxD -> currentText().toStdString(),
+        ui -> textEditFuncion -> toPlainText().toStdString()
+    };
 }
 
 
