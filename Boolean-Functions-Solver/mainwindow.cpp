@@ -1,5 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <ctime>
+#include <iomanip>
+#include <sstream>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -46,6 +49,30 @@ void MainWindow :: borrar() {
     ui -> comboBoxD -> setCurrentText("True");
 }
 
+string MainWindow::formatearTexto(string array[]){
+    string resultado;
+    string recorrido;
+    for(int i = 0; i < 6; i++) {
+        recorrido = array[i];
+        resultado += recorrido;
+        if(recorrido == "True"){
+            resultado += " ";
+        }
+        if(i != 6){
+            resultado += " | ";
+        }
+    }
+    return resultado;
+}
+
+string MainWindow::obtenerHora(){
+    auto t = time(nullptr);
+    auto tm = *localtime(&t);
+    ostringstream oss;
+    oss << put_time(&tm, "%d/%m/%Y %H:%M:%S");
+    return oss.str();
+}
+
 void MainWindow :: push(string formula, bool valoresVerdad[]) {
     controlador -> push(formula, valoresVerdad);
 }
@@ -53,7 +80,6 @@ void MainWindow :: push(string formula, bool valoresVerdad[]) {
 void MainWindow::on_pushButtonBorrar_clicked() {
     borrar();
 }
-
 
 void MainWindow::on_pushButtonEvaluar_clicked() {
     bool a = obtenerDatosComboBox(ui -> comboBoxA);
@@ -63,12 +89,20 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     bool array[4] = { a, b, c, d };
     string formula = ui -> textEditFuncion -> toPlainText().toStdString();
     push(formula,array);
-    QString resultado;
-    if(!controlador -> pull())
+    QString resultado = "True";
+    if(!controlador -> pull()){
         resultado = "False";
-    else
-        resultado = "True";
-     ui -> textEditResult -> setText(resultado);
+    }
+    ui -> textEditResult -> setText(resultado);
+    string arrayFormateo[7] = {
+        obtenerHora(),
+        resultado.toStdString(),
+        ui -> comboBoxA -> currentText().toStdString(),
+        ui -> comboBoxB -> currentText().toStdString(),
+        ui -> comboBoxC -> currentText().toStdString(),
+        ui -> comboBoxD -> currentText().toStdString(),
+        ui -> textEditFuncion -> toPlainText().toStdString()
+    };
 }
 
 

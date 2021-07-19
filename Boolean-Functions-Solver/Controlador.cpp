@@ -7,9 +7,11 @@ Controlador :: Controlador() {
     ventana -> show();
 }
 
-void Controlador :: push(string ff, bool *array) {
+
+void Controlador :: push(string ff, bool array[]){
     funcion -> push(ff, array);
 }
+
 
 bool Controlador :: pull() {
     funcion -> evaluar();
