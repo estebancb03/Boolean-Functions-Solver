@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    dll = new DLLBitacora();
     ui -> setupUi(this);
     llenarComboBox(ui -> comboBoxA);
     llenarComboBox(ui -> comboBoxB);
@@ -52,7 +53,7 @@ void MainWindow :: borrar() {
 string MainWindow::formatearTexto(string array[]){
     string resultado;
     string recorrido;
-    for(int i = 0; i < 6; i++) {
+    for(int i = 0; i < 7; i++) {
         recorrido = array[i];
         resultado += recorrido;
         if(recorrido == "True"){
@@ -69,7 +70,7 @@ string MainWindow::obtenerHora(){
     auto t = time(nullptr);
     auto tm = *localtime(&t);
     ostringstream oss;
-    oss << put_time(&tm, "%d/%m/%Y %H:%M:%S");
+    oss << put_time(&tm, " %d/%m/%Y %H:%M:%S");
     return oss.str();
 }
 
@@ -103,6 +104,8 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
         ui -> comboBoxD -> currentText().toStdString(),
         ui -> textEditFuncion -> toPlainText().toStdString()
     };
+    QString contenido = QString::fromUtf8(formatearTexto(arrayFormateo).c_str());
+    dll -> agregarBitacora(QCoreApplication::applicationDirPath()+"/bitacora.txt",contenido);
 }
 
 
