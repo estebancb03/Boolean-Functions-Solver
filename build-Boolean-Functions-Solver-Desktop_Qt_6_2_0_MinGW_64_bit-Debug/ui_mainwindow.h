@@ -108,6 +108,7 @@ public:
         textEditResult->setEnabled(false);
         textEditResult->setGeometry(QRect(40, 440, 401, 31));
         textEditResult->setFont(font);
+        textEditResult->setOverwriteMode(true);
         pushButtonBorrar = new QPushButton(centralwidget);
         pushButtonBorrar->setObjectName(QString::fromUtf8("pushButtonBorrar"));
         pushButtonBorrar->setGeometry(QRect(170, 280, 271, 61));
