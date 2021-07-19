@@ -10,11 +10,15 @@
     <x>0</x>
     <y>0</y>
     <width>475</width>
-    <height>489</height>
+    <height>498</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Boolean Functions Solver</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../../../../../../Downloads/funcion.png</normaloff>../../../../../../../../../Downloads/funcion.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -479,7 +483,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>475</width>
-     <height>25</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
