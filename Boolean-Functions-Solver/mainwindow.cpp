@@ -46,7 +46,6 @@ void MainWindow::on_pushButtonBorrar_clicked() {
     borrar();
 }
 
-
 void MainWindow::on_pushButtonEvaluar_clicked() {
     bool a = obtenerDatosComboBox(ui -> comboBoxA);
     bool b = obtenerDatosComboBox(ui -> comboBoxB);
