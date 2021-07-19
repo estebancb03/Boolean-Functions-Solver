@@ -18,11 +18,13 @@ SOURCES += \
 
 HEADERS += \
     Controlador.h \
+    DLLBitacora_global.h \
     FuncionBooleana.h \
     Lista.h \
     Mintermino.h \
     Nodo.h \
     Variable.h \
+    dllbitacora.h \
     mainwindow.h
 
 FORMS += \
