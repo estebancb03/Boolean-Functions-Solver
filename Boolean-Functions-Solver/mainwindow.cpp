@@ -46,6 +46,22 @@ void MainWindow :: borrar() {
     ui -> comboBoxD -> setCurrentText("True");
 }
 
+string MainWindow::formatearTexto(string array[]){
+    string resultado;
+    string recorrido;
+    for(int i = 0; i < 6; i++) {
+        recorrido = array[i];
+        resultado += recorrido;
+        if(recorrido == "True"){
+            resultado += " ";
+        }
+        if(i != 6){
+            resultado += " | ";
+        }
+    }
+    return resultado;
+}
+
 void MainWindow :: push(string formula, bool valoresVerdad[]) {
     controlador -> push(formula, valoresVerdad);
 }
