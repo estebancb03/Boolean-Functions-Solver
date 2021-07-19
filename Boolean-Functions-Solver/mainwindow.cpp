@@ -1,5 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <ctime>
+#include <iomanip>
+#include <sstream>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -60,6 +63,14 @@ string MainWindow::formatearTexto(string array[]){
         }
     }
     return resultado;
+}
+
+string MainWindow::obtenerHora(){
+    auto t = time(nullptr);
+    auto tm = *localtime(&t);
+    ostringstream oss;
+    oss << put_time(&tm, "%d/%m/%Y %H:%M:%S");
+    return oss.str();
 }
 
 void MainWindow :: push(string formula, bool valoresVerdad[]) {
