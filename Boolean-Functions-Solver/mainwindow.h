@@ -25,6 +25,8 @@ public:
     void agregarMinterminoMatriz(QTextEdit *textEdit, QString mintermino);
     void push(string formula, bool valoresVerdad[]);
     void setControlador(Controlador *c) { controlador = c; };
+    string formatearTexto(string array[]);
+    string obtenerHora();
 
 private slots:
     void on_pushButtonBorrar_clicked();
