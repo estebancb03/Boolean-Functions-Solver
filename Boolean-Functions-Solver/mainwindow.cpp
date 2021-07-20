@@ -60,6 +60,7 @@ string MainWindow::formatearTexto(string array[]){
             resultado += "|";
         }
     }
+    resultado =+ " ";
     return resultado;
 }
 
@@ -67,7 +68,7 @@ string MainWindow::obtenerHora(){
     auto t = time(nullptr);
     auto tm = *localtime(&t);
     ostringstream oss;
-    oss << put_time(&tm, "%d/%m/%Y %H:%M:%S");
+    oss << put_time(&tm, "%d/%m/%Y/%H:%M:%S");
     return oss.str();
 }
 
@@ -98,7 +99,7 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
         ui -> textEditFuncion -> toPlainText().toStdString()
     };
     QString contenido = QString::fromUtf8(formatearTexto(arrayFormateo).c_str());
-    dll -> agregarBitacora(QCoreApplication::applicationDirPath()+"/bitacora.txt",contenido);
+    dll -> agregarBitacora(QCoreApplication::applicationDirPath() + "/bitacora.txt",contenido);
 }
 
 void MainWindow :: cargarBitacora() {
