@@ -108,7 +108,11 @@ void MainWindow :: separarRegistro(QString array[], string cadema) {
 }
 
 void MainWindow :: agregarRegistro(QString fecha, QString valor, QString funcion) {
-
+    QTreeWidgetItem *item = new QTreeWidgetItem(ui -> treeWidget);
+    item -> setText(0, fecha);
+    item -> setText(1, valor);
+    item -> setText(2, funcion);
+    ui -> treeWidget -> addTopLevelItem(item);
 }
 
 void MainWindow::on_pushButton00_clicked() {
