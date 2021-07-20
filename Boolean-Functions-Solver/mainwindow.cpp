@@ -89,7 +89,7 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     QString resultado = "True";
     if(!controlador -> pull()){
         resultado = "False";
-
+    }
     ui -> textEditResult -> setText(resultado);
     string arrayFormateo[3] = {
         obtenerHora(),
@@ -120,9 +120,7 @@ void MainWindow :: separarRegistro(QString array[], string cadena) {
     string control;
     int i = 0;
     while(getline(ssCadena, control, '|')) {
-        if(i == 0)array[0] = QString::fromUtf8(control);
-        if(i == 1)array[1] = QString::fromUtf8(control);
-        if(i == 2)array[2] = QString::fromUtf8(control);
+        array[i] = QString::fromUtf8(control);
         i++;
     }
 }
