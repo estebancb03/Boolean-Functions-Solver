@@ -71,7 +71,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setEnabled(true);
-        MainWindow->resize(481, 516);
+        MainWindow->resize(481, 548);
         QIcon icon;
         icon.addFile(QString::fromUtf8("../build-Boolean-Functions-Solver-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/debug/Icono.jpeg"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
@@ -80,7 +80,7 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tabWidget->setGeometry(QRect(0, 0, 491, 551));
+        tabWidget->setGeometry(QRect(0, 0, 491, 521));
         tabWidget->setCursor(QCursor(Qt::PointingHandCursor));
         tab = new QWidget();
         tab->setObjectName(QString::fromUtf8("tab"));
@@ -171,7 +171,7 @@ public:
         textEditResult = new QTextEdit(tab);
         textEditResult->setObjectName(QString::fromUtf8("textEditResult"));
         textEditResult->setEnabled(false);
-        textEditResult->setGeometry(QRect(40, 430, 401, 31));
+        textEditResult->setGeometry(QRect(40, 440, 401, 31));
         textEditResult->setFont(font);
         textEditResult->setOverwriteMode(true);
         pushButtonEvaluar = new QPushButton(tab);
@@ -204,12 +204,12 @@ public:
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
         treeWidget = new QTreeWidget(tab_2);
         treeWidget->setObjectName(QString::fromUtf8("treeWidget"));
-        treeWidget->setGeometry(QRect(0, 0, 481, 391));
+        treeWidget->setGeometry(QRect(0, 0, 481, 501));
         tabWidget->addTab(tab_2, QString());
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 481, 25));
+        menubar->setGeometry(QRect(0, 0, 481, 20));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -217,7 +217,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
