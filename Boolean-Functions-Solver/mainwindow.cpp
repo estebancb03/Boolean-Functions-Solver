@@ -57,7 +57,7 @@ string MainWindow::formatearTexto(string array[]){
             resultado += "|";
         }
     }
-    resultado =+ " ";
+    resultado += " ";
     return resultado;
 }
 
