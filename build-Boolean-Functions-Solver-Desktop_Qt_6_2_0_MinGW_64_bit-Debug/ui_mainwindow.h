@@ -78,6 +78,7 @@ public:
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         tabWidget->setGeometry(QRect(0, 0, 491, 551));
+        tabWidget->setCursor(QCursor(Qt::PointingHandCursor));
         tab = new QWidget();
         tab->setObjectName(QString::fromUtf8("tab"));
         pushButton33 = new QPushButton(tab);
@@ -210,7 +211,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
