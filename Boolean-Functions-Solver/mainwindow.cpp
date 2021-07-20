@@ -103,8 +103,14 @@ void MainWindow :: cargarBitacora() {
 
 }
 
-void MainWindow :: separarRegistro(QString array[], string cadema) {
-
+void MainWindow :: separarRegistro(QString array[], string cadena) {
+    stringstream ssCadena(cadena);
+    string control;
+    int i = 0;
+    while(getline(ssCadena, control, '|')) {
+         array[i] = QString::fromUtf8(control);
+         i++;
+    }
 }
 
 void MainWindow :: agregarRegistro(QString fecha, QString valor, QString funcion) {
