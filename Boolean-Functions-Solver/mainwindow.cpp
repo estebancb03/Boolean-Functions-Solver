@@ -88,7 +88,7 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     QString resultado = "True";
     if(!controlador -> pull()){
         resultado = "False";
-    }
+
     ui -> textEditResult -> setText(resultado);
     string arrayFormateo[3] = {
         obtenerHora(),
@@ -97,18 +97,39 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     };
     QString contenido = QString::fromUtf8(formatearTexto(arrayFormateo).c_str());
     dll -> agregarBitacora(QCoreApplication::applicationDirPath() + "/bitacora.txt",contenido);
+    agregarRegistro(QString::fromUtf8(obtenerHora()),resultado,QString::fromUtf8(formula));
 }
 
 void MainWindow :: cargarBitacora() {
-
+    QString arrayContenido[3];
+    QFile file(QCoreApplication::applicationDirPath()+"/bitacora.txt");
+    file.open(QIODevice::ReadOnly);
+    QTextStream texto(&file);
+    string contenido;
+    stringstream ssContenido(QTextStream(&file).readAll().toStdString());
+    while(getline(ssContenido, contenido, ' ')) {
+        separarRegistro(arrayContenido, contenido);
+        agregarRegistro(arrayContenido[0],arrayContenido[1],arrayContenido[2]);
+    }
+    file.close();
 }
 
-void MainWindow :: separarRegistro(QString array[], string cadema) {
-
+void MainWindow :: separarRegistro(QString array[], string cadena) {
+    stringstream ssCadena(cadena);
+    string control;
+    int i = 0;
+    while(getline(ssCadena, control, '|')) {
+         array[i] = QString::fromUtf8(control);
+         i++;
+    }
 }
 
 void MainWindow :: agregarRegistro(QString fecha, QString valor, QString funcion) {
-
+    QTreeWidgetItem *item = new QTreeWidgetItem(ui -> treeWidget);
+    item -> setText(0, fecha);
+    item -> setText(1, valor);
+    item -> setText(2, funcion);
+    ui -> treeWidget -> addTopLevelItem(item);
 }
 
 void MainWindow::on_pushButton00_clicked() {
