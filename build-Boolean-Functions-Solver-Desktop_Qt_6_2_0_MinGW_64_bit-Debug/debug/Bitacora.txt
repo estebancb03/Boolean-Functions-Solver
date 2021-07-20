@@ -1,3 +1,1 @@
-19/07/2021 22:13:34|True|a'bc'd+a'b'c'd+abcd+a'bc'd'+a'b'c'd+a'bcd+abcd
-19/07/2021 22:15:04|True|a'bcd+a'b'c'd+ab'c'd'+ab'c'd+abcd
-19/07/2021 22:25:29|True|a'bc'd'+abc'd+a'bcd
+20/07/2021/03:13:07|False|a'b'c'd+ab'c'd 20/07/2021/03:13:33|False|a'b'cd+abc'd 20/07/2021/03:14:32|False|abc'd+a'b'c'd 20/07/2021/12:20:43|True|a'b'c'd'+ab'c'd+abcd  20/07/2021/12:37:19|False|a'b'cd+a'bc'd 
