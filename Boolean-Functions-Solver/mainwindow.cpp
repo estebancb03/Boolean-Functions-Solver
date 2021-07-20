@@ -105,6 +105,10 @@ void MainWindow :: cargarBitacora() {
 
 }
 
+void MainWindow :: separarRegistro(QString array[], string cadema) {
+
+}
+
 void MainWindow :: agregarRegistro(QString fecha, QString valor, QString funcion) {
 
 }

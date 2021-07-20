@@ -28,6 +28,7 @@ public:
     void setControlador(Controlador *c) { controlador = c; };
     void cargarBitacora();
     void agregarRegistro(QString fecha, QString valor, QString funcion);
+    void separarRegistro(QString array[], string cadena);
     string formatearTexto(string array[]);
     string obtenerHora();
 
