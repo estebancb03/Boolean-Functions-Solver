@@ -13,6 +13,7 @@
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QComboBox>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
@@ -20,6 +21,7 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTextEdit>
+#include <QtWidgets/QTreeWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -60,6 +62,7 @@ public:
     QPushButton *pushButton23;
     QLabel *label_3;
     QWidget *tab_2;
+    QTreeWidget *treeWidget;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -70,7 +73,7 @@ public:
         MainWindow->setEnabled(true);
         MainWindow->resize(481, 516);
         QIcon icon;
-        icon.addFile(QString::fromUtf8("../../../../../../../../../Downloads/funcion.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8("../build-Boolean-Functions-Solver-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/debug/Icono.jpeg"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
         MainWindow->setAutoFillBackground(false);
         centralwidget = new QWidget(MainWindow);
@@ -199,11 +202,14 @@ public:
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        treeWidget = new QTreeWidget(tab_2);
+        treeWidget->setObjectName(QString::fromUtf8("treeWidget"));
+        treeWidget->setGeometry(QRect(0, 0, 481, 391));
         tabWidget->addTab(tab_2, QString());
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 481, 20));
+        menubar->setGeometry(QRect(0, 0, 481, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -254,6 +260,10 @@ public:
         pushButton23->setText(QCoreApplication::translate("MainWindow", "ab'cd", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "b:", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "Analizador", nullptr));
+        QTreeWidgetItem *___qtreewidgetitem = treeWidget->headerItem();
+        ___qtreewidgetitem->setText(2, QCoreApplication::translate("MainWindow", "Funcion", nullptr));
+        ___qtreewidgetitem->setText(1, QCoreApplication::translate("MainWindow", "Valor", nullptr));
+        ___qtreewidgetitem->setText(0, QCoreApplication::translate("MainWindow", "Fecha", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "Bit\303\241cora", nullptr));
     } // retranslateUi
 
