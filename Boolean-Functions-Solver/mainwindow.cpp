@@ -100,7 +100,17 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
 }
 
 void MainWindow :: cargarBitacora() {
-
+    QString arrayContenido[3];
+    QFile file(QCoreApplication::applicationDirPath()+"/bitacora.txt");
+    file.open(QIODevice::ReadOnly);
+    QTextStream texto(&file);
+    string contenido;
+    stringstream ssContenido(QTextStream(&file).readAll().toStdString());
+    while(getline(ssContenido, contenido, ' ')) {
+        separarRegistro(arrayContenido, contenido);
+        agregarRegistro(arrayContenido[0],arrayContenido[1],arrayContenido[2]);
+    }
+    file.close();
 }
 
 void MainWindow :: separarRegistro(QString array[], string cadena) {
