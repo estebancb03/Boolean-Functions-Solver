@@ -4,6 +4,10 @@
 #include <QMainWindow>
 #include <QComboBox>
 #include <QTextEdit>
+#include <QFile>
+#include <ctime>
+#include <iomanip>
+#include <sstream>
 #include "Controlador.h"
 #include "dllbitacora.h"
 using namespace std;
