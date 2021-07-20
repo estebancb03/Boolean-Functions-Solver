@@ -88,7 +88,7 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     QString resultado = "True";
     if(!controlador -> pull()){
         resultado = "False";
-    }
+
     ui -> textEditResult -> setText(resultado);
     string arrayFormateo[3] = {
         obtenerHora(),
@@ -97,6 +97,7 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     };
     QString contenido = QString::fromUtf8(formatearTexto(arrayFormateo).c_str());
     dll -> agregarBitacora(QCoreApplication::applicationDirPath() + "/bitacora.txt",contenido);
+    agregarRegistro(QString::fromUtf8(obtenerHora()),resultado,QString::fromUtf8(formula));
 }
 
 void MainWindow :: cargarBitacora() {
