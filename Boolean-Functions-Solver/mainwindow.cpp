@@ -89,7 +89,7 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     QString resultado = "True";
     if(!controlador -> pull()){
         resultado = "False";
-    }
+
     ui -> textEditResult -> setText(resultado);
     string arrayFormateo[3] = {
         obtenerHora(),
