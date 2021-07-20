@@ -53,14 +53,11 @@ void MainWindow :: borrar() {
 string MainWindow::formatearTexto(string array[]){
     string resultado;
     string recorrido;
-    for(int i = 0; i < 7; i++) {
+    for(int i = 0; i < 3; i++) {
         recorrido = array[i];
         resultado += recorrido;
-        if(recorrido == "True"){
-            resultado += " ";
-        }
-        if(i != 6){
-            resultado += " | ";
+        if(i != 2) {
+            resultado += "|";
         }
     }
     return resultado;
@@ -70,7 +67,7 @@ string MainWindow::obtenerHora(){
     auto t = time(nullptr);
     auto tm = *localtime(&t);
     ostringstream oss;
-    oss << put_time(&tm, " %d/%m/%Y %H:%M:%S");
+    oss << put_time(&tm, "%d/%m/%Y %H:%M:%S");
     return oss.str();
 }
 
@@ -95,19 +92,22 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
         resultado = "False";
     }
     ui -> textEditResult -> setText(resultado);
-    string arrayFormateo[7] = {
+    string arrayFormateo[3] = {
         obtenerHora(),
         resultado.toStdString(),
-        ui -> comboBoxA -> currentText().toStdString(),
-        ui -> comboBoxB -> currentText().toStdString(),
-        ui -> comboBoxC -> currentText().toStdString(),
-        ui -> comboBoxD -> currentText().toStdString(),
         ui -> textEditFuncion -> toPlainText().toStdString()
     };
     QString contenido = QString::fromUtf8(formatearTexto(arrayFormateo).c_str());
     dll -> agregarBitacora(QCoreApplication::applicationDirPath()+"/bitacora.txt",contenido);
 }
 
+void MainWindow :: cargarBitacora() {
+
+}
+
+void MainWindow :: agregarRegistro(QString fecha, QString valor, QString funcion) {
+
+}
 
 void MainWindow::on_pushButton00_clicked() {
     agregarMinterminoMatriz(ui -> textEditFuncion, "a'b'c'd'");

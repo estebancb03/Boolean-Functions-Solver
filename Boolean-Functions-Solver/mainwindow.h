@@ -26,6 +26,8 @@ public:
     void agregarMinterminoMatriz(QTextEdit *textEdit, QString mintermino);
     void push(string formula, bool valoresVerdad[]);
     void setControlador(Controlador *c) { controlador = c; };
+    void cargarBitacora();
+    void agregarRegistro(QString fecha, QString valor, QString funcion);
     string formatearTexto(string array[]);
     string obtenerHora();
 
