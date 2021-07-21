@@ -1,6 +1,5 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
 #include <QMainWindow>
 #include <QComboBox>
 #include <QTextEdit>
@@ -9,7 +8,7 @@
 #include <iomanip>
 #include <sstream>
 #include "Controlador.h"
-#include "dllbitacora.h"
+
 using namespace std;
 
 QT_BEGIN_NAMESPACE
@@ -74,7 +73,6 @@ private slots:
     void on_pushButton33_clicked();
 
 private:
-    DLLBitacora *dll;
     Controlador *controlador;
     Ui :: MainWindow *ui;
 };

@@ -5,7 +5,6 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    dll = new DLLBitacora();
     ui -> setupUi(this);
     llenarComboBox(ui -> comboBoxA);
     llenarComboBox(ui -> comboBoxB);
@@ -91,13 +90,9 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
         resultado = "False";
     }
     ui -> textEditResult -> setText(resultado);
-    string arrayFormateo[3] = {
-        obtenerHora(),
-        resultado.toStdString(),
-        ui -> textEditFuncion -> toPlainText().toStdString()
-    };
+    string arrayFormateo[3] = { obtenerHora(), resultado.toStdString(), formula };
     QString contenido = QString::fromUtf8(formatearTexto(arrayFormateo).c_str());
-    dll -> agregarBitacora(QCoreApplication::applicationDirPath() + "/bitacora.txt",contenido);
+    controlador -> pushBitacora(QCoreApplication::applicationDirPath() + "/bitacora.txt",contenido);
     agregarRegistro(QString::fromUtf8(obtenerHora()),resultado,QString::fromUtf8(formula));
 }
 
