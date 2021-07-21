@@ -71,7 +71,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setEnabled(true);
-        MainWindow->resize(481, 548);
+        MainWindow->resize(481, 543);
         QIcon icon;
         icon.addFile(QString::fromUtf8("../build-Boolean-Functions-Solver-Desktop_Qt_6_2_0_MinGW_64_bit-Debug/debug/Icono.jpeg"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
@@ -204,12 +204,12 @@ public:
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
         treeWidget = new QTreeWidget(tab_2);
         treeWidget->setObjectName(QString::fromUtf8("treeWidget"));
-        treeWidget->setGeometry(QRect(0, 0, 481, 501));
+        treeWidget->setGeometry(QRect(0, 0, 481, 461));
         tabWidget->addTab(tab_2, QString());
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 481, 20));
+        menubar->setGeometry(QRect(0, 0, 481, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -217,7 +217,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
