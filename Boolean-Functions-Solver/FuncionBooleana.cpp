@@ -3,6 +3,10 @@
 #include "FuncionBooleana.h"
 using namespace std;
 
+/*
+  EFECTO: agrega minterminos a la lista
+  MODIFICA: propiedad listaMinterminos
+*/
 void FuncionBooleana :: seleccionarMinterminos() {
     string formula;
     stringstream ssFormula(formulaFuncion);
@@ -12,6 +16,10 @@ void FuncionBooleana :: seleccionarMinterminos() {
     }
 }
 
+/*
+  EFECTO: encuentra el valor de verdad de la funcion ingresada
+  MODIFICA: propiedad valorVerdad
+*/
 void FuncionBooleana :: evaluar() {
     int i = 0;
     setValorVerdad(false);
@@ -26,6 +34,11 @@ void FuncionBooleana :: evaluar() {
     }
 }
 
+/*
+  EFECTO: obtiene los valores de verdad de cada mintermino de la lista
+  REQUIERE: array de tipo bool
+  MODIFICA: propiedad listaMinterminos
+*/
 void FuncionBooleana :: llenarValoresVerdadMinterminos(bool array[]) {
     int i = 0;
     string formula;

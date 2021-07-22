@@ -4,6 +4,10 @@
 #include "Mintermino.h"
 using namespace std;
 
+/*
+  EFECTO: encuentra los valores de verdad de las variables y las evalua
+  MODIFICA: propiedad valorVerdad
+*/
 bool Mintermino :: evaluar() {
     string variablesPosibles = "abcd";
     string letra;
@@ -23,6 +27,10 @@ bool Mintermino :: evaluar() {
     return getValorVerdad();
 }
 
+/*
+  EFECTO: ingresa nodos en la lista variables
+  MODIFICA: propiedad lista variables
+*/
 void Mintermino :: llenarListaVariables() {
      string letra;
     for(int i = 0; i < formulaMintermino.length(); i++) {
@@ -49,6 +57,9 @@ void Mintermino :: llenarListaVariables() {
     }
 }
 
+/*
+  EFECTO: obtiene las variables faltantes de un mintermino incompleto
+*/
 string Mintermino :: averiguaFaltantes() {
     string variablesPosibles = "abcd";
     string variableCiclo;
@@ -61,6 +72,10 @@ string Mintermino :: averiguaFaltantes() {
     return faltantes;
 }
 
+/*
+  EFECTO: revisa la formula de mintermino, la completa y ordena si llega a ser necesario
+  MODIFICA: propiedad lista variables
+*/
 void Mintermino :: estandarizar() {
     string variablesPosibles = "abcd";
     string letraRecorrido;
