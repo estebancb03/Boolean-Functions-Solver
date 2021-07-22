@@ -18,10 +18,19 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+/*
+  EFECTO: agrega items al comboBox
+  REQUIERE: QComboBox
+  MODIFICA: items del QComboBox
+*/
 void MainWindow :: llenarComboBox(QComboBox *comboBox) {
     comboBox -> addItems({"True", "False"});
 }
 
+/*
+  EFECTO:  obtiene texto del item mencionado en el comboBox y devuelve un bool de esta
+  REQUIERE: QComboBox
+*/
 bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
     bool result = true;
     QString valor = comboBox -> currentText();
@@ -30,6 +39,10 @@ bool MainWindow :: obtenerDatosComboBox(QComboBox *comboBox) {
     return result;
 }
 
+/*
+  EFECTO: agrega minterminos a QTextEdit dependiendo del boton de la matriz seleccionada
+  REQUIERE: QTextEdit y QString
+*/
 void MainWindow :: agregarMinterminoMatriz(QTextEdit *textEdit, QString mintermino) {
     QString resultado = textEdit -> toPlainText();
     if(resultado != "")
@@ -38,6 +51,10 @@ void MainWindow :: agregarMinterminoMatriz(QTextEdit *textEdit, QString mintermi
     textEdit -> setText(resultado);
 }
 
+/*
+  EFECTO: devuelve a todos los objetos al estado predeterminado
+  MODIFICA: QComboBox y QTextEdit
+*/
 void MainWindow :: borrar() {
     ui -> textEditFuncion -> setText("");
     ui -> textEditResult -> setText("");
@@ -47,6 +64,10 @@ void MainWindow :: borrar() {
     ui -> comboBoxD -> setCurrentText("True");
 }
 
+/*
+  EFECTO: le da formato a una cadena de texto
+  REQUIERE: array tipo string
+*/
 string MainWindow::formatearTexto(string array[]){
     string resultado;
     string recorrido;
@@ -69,14 +90,65 @@ string MainWindow::obtenerHora(){
     return oss.str();
 }
 
+
 void MainWindow :: push(string formula, bool valoresVerdad[]) {
     controlador -> push(formula, valoresVerdad);
 }
 
+/*
+  EFECTO: agrega el contenido de bitacota.txt al QTreeWidget
+  MODIFICA: QTreeWidget
+*/
+void MainWindow :: cargarBitacora() {
+    QString arrayContenido[3];
+    QFile file(QCoreApplication::applicationDirPath()+"/bitacora.txt");
+    file.open(QIODevice::ReadOnly);
+    QTextStream texto(&file);
+    string contenido;
+    stringstream ssContenido(QTextStream(&file).readAll().toStdString());
+    while(getline(ssContenido, contenido, ' ')) {
+        separarRegistro(arrayContenido, contenido);
+        agregarRegistro(arrayContenido[0],arrayContenido[1],arrayContenido[2]);
+    }
+    file.close();
+}
+
+/*
+  EFECTO: Separa elementos de un registro
+  REQUIERE: string y un array QString
+*/
+void MainWindow :: separarRegistro(QString array[], string cadena) {
+    stringstream ssCadena(cadena);
+    string control;
+    int i = 0;
+    while(getline(ssCadena, control, '|')) {
+        array[i] = QString::fromUtf8(control);
+        i++;
+    }
+}
+/*
+  EFECTO: agrega items al QTreeWidget
+  REQUIERE: QString, QString, QString
+  MODIFICA: QTreeWidget
+*/
+void MainWindow :: agregarRegistro(QString fecha, QString valor, QString funcion) {
+    QTreeWidgetItem *item = new QTreeWidgetItem(ui -> treeWidget);
+    item -> setText(0, fecha);
+    item -> setText(1, valor);
+    item -> setText(2, funcion);
+    ui -> treeWidget -> addTopLevelItem(item);
+}
+
+//Eventos de los botones
 void MainWindow::on_pushButtonBorrar_clicked() {
     borrar();
 }
 
+/*
+  EFECTO: agrega items al comboBox
+  REQUIERE: QComboBox
+  MODIFICA: items del QComboBox
+*/
 void MainWindow::on_pushButtonEvaluar_clicked() {
     bool a = obtenerDatosComboBox(ui -> comboBoxA);
     bool b = obtenerDatosComboBox(ui -> comboBoxB);
@@ -94,38 +166,6 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     QString contenido = QString::fromUtf8(formatearTexto(arrayFormateo).c_str());
     controlador -> pushBitacora(QCoreApplication::applicationDirPath() + "/bitacora.txt",contenido);
     agregarRegistro(QString::fromUtf8(obtenerHora()),resultado,QString::fromUtf8(formula));
-}
-
-void MainWindow :: cargarBitacora() {
-    QString arrayContenido[3];
-    QFile file(QCoreApplication::applicationDirPath()+"/bitacora.txt");
-    file.open(QIODevice::ReadOnly);
-    QTextStream texto(&file);
-    string contenido;
-    stringstream ssContenido(QTextStream(&file).readAll().toStdString());
-    while(getline(ssContenido, contenido, ' ')) {
-        separarRegistro(arrayContenido, contenido);
-        agregarRegistro(arrayContenido[0],arrayContenido[1],arrayContenido[2]);
-    }
-    file.close();
-}
-
-void MainWindow :: separarRegistro(QString array[], string cadena) {
-    stringstream ssCadena(cadena);
-    string control;
-    int i = 0;
-    while(getline(ssCadena, control, '|')) {
-        array[i] = QString::fromUtf8(control);
-        i++;
-    }
-}
-
-void MainWindow :: agregarRegistro(QString fecha, QString valor, QString funcion) {
-    QTreeWidgetItem *item = new QTreeWidgetItem(ui -> treeWidget);
-    item -> setText(0, fecha);
-    item -> setText(1, valor);
-    item -> setText(2, funcion);
-    ui -> treeWidget -> addTopLevelItem(item);
 }
 
 void MainWindow::on_pushButton00_clicked() {
@@ -206,4 +246,5 @@ void MainWindow::on_pushButton32_clicked() {
 void MainWindow::on_pushButton33_clicked() {
     agregarMinterminoMatriz(ui -> textEditFuncion, "ab'cd'");
 }
+
 
