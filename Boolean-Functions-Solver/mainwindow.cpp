@@ -82,17 +82,15 @@ string MainWindow::formatearTexto(string array[]){
     return resultado;
 }
 
+/*
+  EFECTO: obtiene la hora del sistema
+*/
 string MainWindow::obtenerHora(){
     auto t = time(nullptr);
     auto tm = *localtime(&t);
     ostringstream oss;
     oss << put_time(&tm, "%d/%m/%Y/%H:%M:%S");
     return oss.str();
-}
-
-
-void MainWindow :: push(string formula, bool valoresVerdad[]) {
-    controlador -> push(formula, valoresVerdad);
 }
 
 /*
@@ -156,7 +154,7 @@ void MainWindow::on_pushButtonEvaluar_clicked() {
     bool d = obtenerDatosComboBox(ui -> comboBoxD);
     bool array[4] = { a, b, c, d };
     string formula = ui -> textEditFuncion -> toPlainText().toStdString();
-    push(formula,array);
+    controlador -> push(formula,array);
     QString resultado = "True";
     if(!controlador -> pull()){
         resultado = "False";
